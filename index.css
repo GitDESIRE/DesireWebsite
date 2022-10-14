@@ -99,6 +99,7 @@ body {
 }
 
 .ul_nav a {
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Montserrat';
   font-style: normal;
@@ -114,7 +115,7 @@ body {
 }
 
 .ul_nav a:hover {
-  color: #9AD351;
+  color: #9ad351;
 }
 
 .desire_p {
@@ -123,8 +124,7 @@ body {
   color: #282828;
   opacity: 0.1;
   text-transform: uppercase;
-  text-shadow: white 1px 1px 0, white -1px -1px 0,
-    white -1px 1px 0, white 1px -1px 0;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
   position: absolute;
   z-index: 0;
 }
@@ -180,13 +180,13 @@ body {
   font-size: 15px;
   line-height: 18px;
   opacity: 0.6;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .elipse_button {
   width: 215px;
   height: 215px;
-  background-color: #9AD351;
+  background-color: #9ad351;
   border-radius: 50%;
   transform: translate(-50%, -50 px);
 }
@@ -198,7 +198,7 @@ body {
 }
 
 .white_wrap {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -214,18 +214,16 @@ body {
 }
 
 .div_ul li:before {
-  content: "\2022 ";
+  content: '\2022 ';
   padding-right: 35px;
-  text-shadow: #9AD351 1px 1px 0, #9AD351 -1px -1px 0,
-    #9AD351 -1px 1px 0, #9AD351 1px -1px 0;
+  text-shadow: #9ad351 1px 1px 0, #9ad351 -1px -1px 0, #9ad351 -1px 1px 0, #9ad351 1px -1px 0;
 }
 
 .ul_white {
   margin-top: 171px;
   white-space: nowrap;
-  color: #FFFFFF;
-  text-shadow: black 1px 1px 0, black -1px -1px 0,
-    black -1px 1px 0, black 1px -1px 0;
+  color: #ffffff;
+  text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
 }
 
 .white_wrap_content {
@@ -240,7 +238,7 @@ body {
   font-weight: 800;
   font-size: 80px;
   line-height: 94px;
-  color: #9AD351;
+  color: #9ad351;
   margin-left: 200px;
   margin-right: 322px;
 }
@@ -302,7 +300,6 @@ body {
 }
 
 .black_wrap {
-
   background-color: #282828;
   overflow: hidden;
   padding-bottom: 130px;
@@ -310,8 +307,7 @@ body {
 
 .ul_black {
   color: #282828;
-  text-shadow: white 1px 1px 0, white -1px -1px 0,
-    white -1px 1px 0, white 1px -1px 0;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
 }
 
 .black_wrap_content {
@@ -323,7 +319,7 @@ body {
 .black_wrap_wrap_content {
   margin-left: 24px;
   width: 384px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .h1_wrap {
@@ -353,8 +349,8 @@ body {
 }
 
 .wrap_ul li:before {
-  color: #9AD351;
-  content: "\2022 ";
+  color: #9ad351;
+  content: '\2022 ';
   padding-right: 10px;
 }
 
@@ -364,7 +360,7 @@ body {
 }
 
 .wrap_button button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #282828;
   font-family: 'Montserrat';
   font-style: normal;
@@ -393,7 +389,7 @@ body {
 }
 
 .white_wrap_slider_active {
-  background-color: #9AD351;
+  background-color: #9ad351;
 }
 
 .wrap_slider_img {
@@ -415,7 +411,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
 }
 
@@ -437,7 +433,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
 }
 
@@ -460,7 +456,7 @@ body {
   justify-content: space-between;
   position: absolute;
   font-size: 100px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
 }
 
@@ -468,7 +464,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   margin-top: 24px;
-  border-bottom: 1px solid #9AD351;
+  border-bottom: 1px solid #9ad351;
 }
 
 .wrap_button_white {
@@ -480,7 +476,7 @@ body {
 .wrap_button_white button {
   margin-top: 48px;
   color: #282828;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -516,16 +512,14 @@ body {
 .qwerty {
   width: 210px;
 
-  border-bottom: 1px solid #9AD351;
+  border-bottom: 1px solid #9ad351;
 }
 
 .div_circle_wrap {
-
   position: relative;
   color: #282828;
   font-size: 50px;
-  text-shadow: #9AD351 1px 1px 0, #9AD351 -1px -1px 0,
-    #9AD351 -1px 1px 0, #9AD351 1px -1px 0;
+  text-shadow: #9ad351 1px 1px 0, #9ad351 -1px -1px 0, #9ad351 -1px 1px 0, #9ad351 1px -1px 0;
 }
 
 .div_circle {
@@ -536,7 +530,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #9AD351;
+  color: #9ad351;
 }
 
 ._02 {
@@ -548,7 +542,6 @@ body {
 }
 
 .wrap_how_we_work_1 {
-
   margin-top: 50px;
   margin-left: 0;
   justify-content: center;
@@ -576,11 +569,11 @@ body {
 }
 
 .white_wrap_pp span {
-  color: #9AD351;
+  color: #9ad351;
 }
 
 .wrap_button_green button {
-  background-color: #9AD351;
+  background-color: #9ad351;
 }
 
 .wrap_button_green {
