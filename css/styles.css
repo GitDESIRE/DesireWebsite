@@ -1143,7 +1143,6 @@ body {
 .seo-banner-top {
   width: 100%;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -1158,7 +1157,7 @@ body {
 .seo-banner-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .seo-banner-description {
@@ -1652,3 +1651,92 @@ body {
 }
 
 .button-invitation .input {} */
+
+/* TariffsPage */
+
+.subTitle {
+  margin: 150px 0 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionsBox {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 150px;
+}
+
+.desicionBox {
+  border: 1px solid #76767680;
+  padding: 45px 60px;
+}
+
+.desicion-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionBox p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.desicionBox span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionBox ul {
+  list-style-type: disc;
+  margin: 12px 0 36px;
+  line-height: 40px;
+  padding-inline-start: 20px;
+}
+
+.desicionBox li {
+  font-weight: 300;
+  font-size: 15px;
+  color: #282828;
+}
+
+.desicion-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-btn,
+.order-btn {
+  color: #282828;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about-btn {
+  background-color: #fff;
+  border: 1px solid #9ad351;
+  width: 234px;
+}
+
+.order-btn {
+  width: 209px;
+  background-color: #9ad351;
+  border: none;
+}
+/* TariffsPage */
