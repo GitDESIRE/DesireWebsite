@@ -161,6 +161,7 @@ body {
   padding-bottom: 10px;
   outline: none;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 
 .newProject_form option {
@@ -191,17 +192,40 @@ body {
 }
 
 .file-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 260px;
   background-color: #fff;
   border: 1px solid #9ad351;
-  padding: 15px 0;
-  position: relative;
+  padding: 15px;
   cursor: pointer;
+  position: relative;
 
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   color: #282828;
+}
+
+.fileCancel-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+}
+
+.fileCancel-button_stroke2 {
+  width: 20px;
+  border: 1px solid #282828;
+  transform: rotate(135deg);
+  position: absolute;
+}
+
+.fileCancel-button_stroke1 {
+  width: 20px;
+  border: 1px solid #282828;
+  transform: rotate(45deg);
+  position: absolute;
 }
 
 .submit-button {
