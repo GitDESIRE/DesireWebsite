@@ -9,6 +9,10 @@ a {
   color: #757575;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* a:visited {
   color: #757575;
 } */
@@ -731,7 +735,6 @@ body {
   background-color: #fff;
   border: 1px solid #9ad351;
   padding: 15px;
-  cursor: pointer;
   position: relative;
 
   font-size: 16px;
@@ -742,7 +745,6 @@ body {
 
 .fileCancel-button {
   position: relative;
-  cursor: pointer;
   width: 20px;
 }
 
@@ -769,7 +771,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  cursor: pointer;
 }
 
 .agreement_box {
@@ -811,7 +812,7 @@ body {
 
 .footer-top {
   width: 100%;
-  min-height: 741px;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1430,7 +1431,6 @@ body {
 
 .startProject-btn {
   position: absolute;
-  cursor: pointer;
   left: -20%;
   top: -20%;
 }
@@ -1725,7 +1725,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  cursor: pointer;
 }
 
 .about-btn {
@@ -1813,7 +1812,6 @@ body {
   line-height: 20px;
   text-align: center;
   color: #282828;
-  cursor: pointer;
 }
 /* TariffsPage */
 
@@ -1861,4 +1859,17 @@ body {
   border: none;
   align-self: center;
   margin-top: 130px;
+}
+
+/* tarif arrow */
+
+.arrow-title {
+  max-width: 696px;
+}
+
+.tarif-main .content-box p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #767676;
 }
