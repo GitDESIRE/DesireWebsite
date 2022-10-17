@@ -1816,3 +1816,49 @@ body {
   cursor: pointer;
 }
 /* TariffsPage */
+
+/* TariffsPage Start */
+
+.tarif-main {
+  padding: 150px 0;
+}
+
+.tarif-main .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarif-main .content-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 150px;
+}
+
+.tarif-main .content-box:nth-child(n + 2) {
+  margin-top: 150px;
+}
+
+.tarif-main .content-box h2 {
+  margin: 0;
+  width: 100%;
+}
+
+.tarif-main .content-box ul {
+  list-style-type: disc;
+}
+
+.tarif-main .content-box li:nth-child(n + 2) {
+  margin-top: 24px;
+}
+
+.tarif-main .content-box span {
+  align-self: center;
+}
+
+.tarif-start-btn {
+  width: 270px;
+  border: none;
+  align-self: center;
+  margin-top: 130px;
+}
