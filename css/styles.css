@@ -1739,4 +1739,80 @@ body {
   background-color: #9ad351;
   border: none;
 }
+
+.cases .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 830px;
+  height: 554px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 80px 50px;
+  background-color: #282828;
+  opacity: 0.5;
+  transition: all 0.5s ease-in;
+}
+
+.swiper-slide-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.swiper-slide-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.swiper-slide-active {
+  background-color: #9ad351;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.swiper-slide-main a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #282828;
+}
+
+.swiper-pagination {
+  bottom: -14px !important;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  height: 1px;
+  background-color: #9ad351;
+  opacity: 0.5;
+}
+
+.cases-btn {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  padding: 15px;
+  align-self: center;
+  background-color: #fff;
+  border: 1px solid #282828;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #282828;
+  cursor: pointer;
+}
 /* TariffsPage */

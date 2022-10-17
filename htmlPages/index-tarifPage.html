@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desire</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
   </style>
@@ -92,7 +93,37 @@
   <section class="cases">
     <div class="wrapper">
       <h2 class="subTitle">кейсы</h2>
-          <!-- TODO: реализовать свайпер изображений -->
+          <!-- TODO: доработать свайпер -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                <div class="swiper-slide-main">
+                  <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                  <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                <div class="swiper-slide-main">
+                  <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                  <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                <div class="swiper-slide-main">
+                  <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                  <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                </div>
+              </div>
+            </div>
+            <!-- Доделать пагинацию у свайпера -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <button class="cases-btn">Смотреть все</button>
     </div>
   </section>
   <section class="project">
@@ -167,5 +198,7 @@
         </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+  <script src="../js/swiper.js"></script>
 </body>
 </html>
