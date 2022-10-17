@@ -9,6 +9,10 @@ a {
   color: #757575;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* a:visited {
   color: #757575;
 } */
@@ -731,7 +735,6 @@ body {
   background-color: #fff;
   border: 1px solid #9ad351;
   padding: 15px;
-  cursor: pointer;
   position: relative;
 
   font-size: 16px;
@@ -742,7 +745,6 @@ body {
 
 .fileCancel-button {
   position: relative;
-  cursor: pointer;
   width: 20px;
 }
 
@@ -769,7 +771,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  cursor: pointer;
 }
 
 .agreement_box {
@@ -811,7 +812,7 @@ body {
 
 .footer-top {
   width: 100%;
-  min-height: 741px;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1143,7 +1144,6 @@ body {
 .seo-banner-top {
   width: 100%;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -1158,7 +1158,7 @@ body {
 .seo-banner-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .seo-banner-description {
@@ -1431,7 +1431,6 @@ body {
 
 .startProject-btn {
   position: absolute;
-  cursor: pointer;
   left: -20%;
   top: -20%;
 }
@@ -1652,3 +1651,225 @@ body {
 }
 
 .button-invitation .input {} */
+
+/* TariffsPage */
+
+.subTitle {
+  margin: 150px 0 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionsBox {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 150px;
+}
+
+.desicionBox {
+  border: 1px solid #76767680;
+  padding: 45px 60px;
+}
+
+.desicion-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionBox p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.desicionBox span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionBox ul {
+  list-style-type: disc;
+  margin: 12px 0 36px;
+  line-height: 40px;
+  padding-inline-start: 20px;
+}
+
+.desicionBox li {
+  font-weight: 300;
+  font-size: 15px;
+  color: #282828;
+}
+
+.desicion-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-btn,
+.order-btn {
+  color: #282828;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.about-btn {
+  background-color: #fff;
+  border: 1px solid #9ad351;
+  width: 234px;
+}
+
+.order-btn {
+  width: 209px;
+  background-color: #9ad351;
+  border: none;
+}
+
+.cases .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 830px;
+  height: 554px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 80px 50px;
+  background-color: #282828;
+  opacity: 0.5;
+  transition: all 0.5s ease-in;
+}
+
+.swiper-slide-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.swiper-slide-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.swiper-slide-active {
+  background-color: #9ad351;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.swiper-slide-main a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #282828;
+}
+
+.swiper-pagination {
+  bottom: -14px !important;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  height: 1px;
+  background-color: #9ad351;
+  opacity: 0.5;
+}
+
+.cases-btn {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  padding: 15px;
+  align-self: center;
+  background-color: #fff;
+  border: 1px solid #282828;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #282828;
+}
+/* TariffsPage */
+
+/* TariffsPage Start */
+
+.tarif-main {
+  padding: 150px 0;
+}
+
+.tarif-main .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarif-main .content-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 150px;
+}
+
+.tarif-main .content-box:nth-child(n + 2) {
+  margin-top: 150px;
+}
+
+.tarif-main .content-box h2 {
+  margin: 0;
+  width: 100%;
+}
+
+.tarif-main .content-box ul {
+  list-style-type: disc;
+}
+
+.tarif-main .content-box li:nth-child(n + 2) {
+  margin-top: 24px;
+}
+
+.tarif-main .content-box span {
+  align-self: center;
+}
+
+.tarif-start-btn {
+  width: 270px;
+  border: none;
+  align-self: center;
+  margin-top: 130px;
+}
+
+/* tarif arrow */
+
+.arrow-title {
+  max-width: 696px;
+}
+
+.tarif-main .content-box p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #767676;
+}
