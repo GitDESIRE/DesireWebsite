@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Desire</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
@@ -172,54 +173,36 @@
                     </ul>
                 </div>
                 <div class="white_wrap_wrap_slider">
-                    <div class="nav_wrap">
-                        <div class="prev"><img src="../assets/img/Vector (11).png" alt=""></div>
-                        <div class="next"><img src="../assets/img/Vector (11) — копия.png" alt=""></div>
-                    </div>
-                    <div class="white_wrap_slider">
-                        <div class="wrap_slider_img">
-                            <img src="../assets/img/49be08b9e5194d07207f973876cf673b.jpeg" alt="">
-                        </div>
-                        <div class="wrap_slider_p_a">
-                            <div class="wrap_slider_p">
-                                <p>Veloretti: Discover World with Us</p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                            <div class="swiper-slide-main">
+                              <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                              <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
                             </div>
-                            <div class="wrap_slider_a">
-                                <a href="#">Посмотреть</a>
-                                <img src="../assets/img/arrow-up-right.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                            <div class="swiper-slide-main">
+                              <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                              <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="white_wrap_slider white_wrap_slider_active">
-                        <div class="wrap_slider_img">
-                            <img src="../assets/img/49be08b9e5194d07207f973876cf673b.jpeg" alt="">
-                        </div>
-                        <div class="wrap_slider_p_a">
-                            <div class="wrap_slider_p">
-                                <p>Veloretti: Discover World with Us</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                            <div class="swiper-slide-main">
+                              <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                              <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
                             </div>
-                            <div class="wrap_slider_a">
-                                <a href="#">Посмотреть</a>
-                                <img src="../assets/img/arrow-up-right.png" alt="">
-                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="white_wrap_slider">
-                        <div class="wrap_slider_img">
-                            <img src="../assets/img/49be08b9e5194d07207f973876cf673b.jpeg" alt="">
-                        </div>
-                        <div class="wrap_slider_p_a">
-                            <div class="wrap_slider_p">
-                                <p>Veloretti: Discover World with Us</p>
-                            </div>
-                            <div class="wrap_slider_a">
-                                <a href="#">Посмотреть</a>
-                                <img src="../assets/img/arrow-up-right.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                        <!-- Доделать пагинацию у свайпера -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
                 </div>
-                <div class="div_border"></div>
                 <div class="wrap_button_white">
                     <button>Смотреть всё</button>
                 </div>
@@ -382,7 +365,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
 </body>
 
