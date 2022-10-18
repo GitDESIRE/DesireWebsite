@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   speed: 800,
+  spaceBetween: 0,
   lazyLoading: true,
   navigation: {
     nextEl: '.swiper-button-next',
