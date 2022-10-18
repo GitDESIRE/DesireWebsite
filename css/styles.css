@@ -1755,9 +1755,8 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 80px 80px 50px;
-  background-color: #282828;
-  opacity: 0.5;
-  transition: all 0.5s ease-in;
+  background-color: #9ad351;
+  opacity: 1;
 }
 
 .swiper-slide-main {
@@ -1777,9 +1776,9 @@ body {
 }
 
 .swiper-slide-active {
-  background-color: #9ad351;
+  /* background-color: #9ad351;
   opacity: 1;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; */
 }
 
 .swiper-slide-main a {
@@ -1792,12 +1791,13 @@ body {
 .swiper-pagination {
   bottom: -14px !important;
   display: block;
+  height: 1px;
+  background-color: black;
+  z-index: 3;
+  opacity: 0.5;
 }
 
 .swiper-pagination-bullet {
-  height: 1px;
-  background-color: #9ad351;
-  opacity: 0.5;
 }
 
 .cases-btn {
