@@ -1,7 +1,10 @@
+const slides = document.querySelectorAll('.swiper-slide');
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
+  centeredSlides: true,
   speed: 800,
   spaceBetween: 0,
+  initialSlide: 1,
   lazyLoading: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -9,6 +12,8 @@ const swiper = new Swiper('.swiper', {
   },
   pagination: {
     el: '.swiper-pagination',
-    type: 'custom',
+    // renderBullet: function (index, className) {
+
+    // }
   },
 })
