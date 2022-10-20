@@ -2034,9 +2034,47 @@ nav {
 .projects-mobile .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-picture {
     display: flex;
     gap: 59px;
+}
+
+
+/* dolfie */
+
+
+/* projects */
+
+.projects-dolfie {
+    background-image: url(../assets/img/Лента\ синяя\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+}
+
+.dolfie-mobile {
+    background: #23394E;
+}
+
+.dolfie-mobile-project {
+    background: #282828;
+}
+
+.dolfie-mobile-project .wrapper {
+    padding-top: 170px;
+    padding-bottom: 169px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lookbook {
+    background: #23394E;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 170px;
+    background-image: url(../assets/img/Rectangle\ 169\ \(1\).png);
+    background-repeat: no-repeat;
 }
