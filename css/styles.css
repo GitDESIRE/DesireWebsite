@@ -22,6 +22,12 @@ body {
   background: white;
 }
 
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 0 12px;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat';
@@ -39,7 +45,6 @@ body {
 
 .desire_p {
   font-family: 'Raleway';
-  font-style: normal;
   color: #282828;
   opacity: 0.1;
   text-transform: uppercase;
@@ -65,7 +70,7 @@ body {
 }
 
 .p_3 {
-  bottom: -20%;
+  bottom: -5%;
   right: 10%;
   transform: rotate(20deg);
   font-size: 250px;
@@ -88,7 +93,6 @@ body {
 .mainPage-content .content-title {
   margin-bottom: 12px;
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -133,7 +137,6 @@ body {
 .div_ul li {
   display: inline;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
@@ -165,7 +168,6 @@ body {
 
 .white_logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 80px;
   line-height: 94px;
@@ -173,12 +175,27 @@ body {
   margin-right: 322px;
 }
 
+@media (max-width: 1200px) {
+  .white_logo {
+    margin-right: 222px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .white_logo {
+    margin-right: 5%;
+  }
+
+  .footer-social {
+    gap: 180px;
+  }
+}
+
 .white_logo span {
   text-transform: uppercase;
 }
 
 .white_wrap_p {
-  width: 588px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -186,7 +203,6 @@ body {
 .white_wrap_p h1 {
   width: 100%;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
@@ -198,7 +214,6 @@ body {
   width: 266px;
   margin-right: 24px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -209,7 +224,6 @@ body {
   text-align: center;
   margin-top: 10px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -248,14 +262,14 @@ body {
 
 .black_wrap_wrap_content {
   margin-left: 24px;
-  width: 384px;
+  width: 100%;
+  max-width: 384px;
   color: #ffffff;
 }
 
 .h1_wrap {
   padding-bottom: 24px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -267,7 +281,6 @@ body {
   margin-top: 24px;
   margin-bottom: 48px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -293,7 +306,6 @@ body {
   color: #ffffff;
   background-color: #282828;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -336,7 +348,6 @@ body {
 .wrap_slider_p {
   width: 306px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -359,7 +370,6 @@ body {
 .wrap_slider_a a {
   text-decoration: none;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -401,7 +411,6 @@ body {
   color: #282828;
   background-color: #ffffff;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -413,6 +422,18 @@ body {
   margin-left: 0;
   margin-top: 130px;
   gap: 170px;
+}
+
+@media (max-width: 1200px) {
+  .wrap_how_we_work {
+    gap: 130px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrap_how_we_work {
+    gap: 80px;
+  }
 }
 
 .how_we_work {
@@ -432,9 +453,23 @@ body {
   margin-right: 200px;
 }
 
+@media (max-width: 1200px) {
+  .qwerty_wrap {
+    margin-left: 0;
+    margin-right: 0;
+    width: unset;
+  }
+}
+
 .qwerty {
   width: 210px;
   border-bottom: 1px solid #9ad351;
+}
+
+@media (max-width: 1200px) {
+  .qwerty {
+    width: 155px;
+  }
 }
 
 .div_circle_wrap {
@@ -446,7 +481,6 @@ body {
 
 .div_circle {
   position: absolute;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -461,6 +495,12 @@ body {
 
 ._01 {
   width: 185px;
+}
+
+@media (max-width: 1200px) {
+  ._01 {
+    width: 155px;
+  }
 }
 
 .wrap_how_we_work_1 {
@@ -479,13 +519,19 @@ body {
 }
 
 .white_wrap_pp {
-  width: 1099px;
-  margin: 221px auto 48px;
+  max-width: 1099px;
+  margin: 221px auto 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
   text-align: center;
   color: #282828;
+}
+
+@media (max-width: 1100px) {
+  .white_wrap_pp {
+    margin: 221px 62.5px 0;
+  }
 }
 
 .white_wrap_pp span {
@@ -540,7 +586,6 @@ nav {
 }
 
 .nav-list_link {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -566,7 +611,6 @@ nav {
 .title {
   max-width: 471px;
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -761,10 +805,15 @@ nav {
   align-items: center;
 }
 
+@media (max-width: 1100px) {
+  .footer-top {
+    justify-content: space-around;
+  }
+}
+
 .footer-title {
   width: 100%;
   max-width: 290px;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -782,7 +831,6 @@ nav {
 
 .form .input {
   width: 100%;
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 13px;
@@ -837,7 +885,6 @@ nav {
 }
 
 .rights {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -845,16 +892,19 @@ nav {
 }
 
 .rights .data-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
 }
 
+.footer-social {
+  display: flex;
+  gap: 247px;
+}
+
 .footer-item-title {
   margin-bottom: 12px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -865,7 +915,6 @@ nav {
 .footer-item,
 .footer-link {
   margin-bottom: 6px;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -874,7 +923,6 @@ nav {
 
 .footer-btn {
   padding: 15px 40px;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -906,7 +954,6 @@ nav {
 }
 
 .footer-bottom-link .mail-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -926,11 +973,14 @@ nav {
 .footer-name {
   margin: 0;
   padding: 0;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: #767676;
+}
+
+.footer-name:last-child {
+  margin-left: 62px;
 }
 
 .logo-footer {
@@ -971,7 +1021,6 @@ nav {
   margin: 0;
   max-width: 548px;
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -1026,7 +1075,6 @@ nav {
   width: 100%;
   max-width: 223px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1036,7 +1084,6 @@ nav {
 
 .case-link {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -1060,7 +1107,6 @@ nav {
 
 .project-text {
   max-width: 1120px;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
@@ -1075,7 +1121,6 @@ nav {
 .btn-project {
   max-width: 205px;
   padding: 15px 40px;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1096,7 +1141,6 @@ nav {
 }
 
 .seo-banner-section {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -1111,7 +1155,6 @@ nav {
 
 .seo-banner-description {
   max-width: 588px;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
@@ -1120,7 +1163,6 @@ nav {
 
 .seo-content-text {
   max-width: 587px;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1142,7 +1184,6 @@ nav {
   margin: 0;
   width: 100%;
   padding-bottom: 48px;
-  font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
@@ -1203,7 +1244,6 @@ nav {
 }
 
 .tabs .tab h3 {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -1271,7 +1311,6 @@ nav {
   bottom: 14px;
   padding: 15px 40px;
   background: #9ad351;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1290,7 +1329,6 @@ nav {
   max-width: 533px;
   display: none;
   position: absolute;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1306,7 +1344,6 @@ nav {
 .tabs .tab h4 {
   margin-top: 0;
   margin-right: 58px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1322,7 +1359,6 @@ nav {
 .tabs .tab .task-list li {
   list-style: disc;
   list-style-position: inside;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1339,7 +1375,6 @@ nav {
   margin-left: 329px;
   margin-top: 0;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1386,7 +1421,6 @@ nav {
 .team-banner-description {
   max-width: 384px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1405,7 +1439,6 @@ nav {
 .team-title {
   margin: 0;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
@@ -1441,7 +1474,6 @@ nav {
 
 .name-team {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -1451,7 +1483,6 @@ nav {
 
 .team-function {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1492,7 +1523,6 @@ nav {
 .team-text {
   max-width: 256px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1536,7 +1566,6 @@ nav {
   margin: 0;
   min-width: 407px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
@@ -1553,9 +1582,7 @@ nav {
 .personal-data .input {
   width: 100%;
   max-width: 260px;
-  font-style: normal;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 13px;
@@ -1589,7 +1616,7 @@ nav {
 .input-file {
     padding: 15px 41px;
     font-family: 'Montserrat';
-    font-style: normal;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -1605,7 +1632,6 @@ nav {
 .subTitle {
   margin: 150px 0 48px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
@@ -1772,8 +1798,8 @@ nav {
 
 .swiper-pagination {
   bottom: -14px !important;
-  left: 135px !important;
-  width: 80% !important;
+  /* left: 115px !important; */
+  /* width: 80% !important; */
   height: 1px;
   background-color: #9ad351;
   opacity: 0.5;
@@ -1863,4 +1889,104 @@ nav {
   font-size: 15px;
   line-height: 18px;
   color: #767676;
+}
+
+@media (max-width: 980px) {
+  .mainPage-content .content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-social {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .mainPage-content .content-logo {
+    align-self: flex-end;
+  }
+
+  .white_wrap .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .white_logo {
+    margin-right: 0;
+  }
+
+  .text-box {
+    flex-direction: column;
+  }
+
+  .white_wrap_p p {
+    width: unset;
+    margin-right: 0;
+  }
+
+  .white_a {
+    text-align: right;
+  }
+
+  .black_wrap_wrap_content {
+    margin-left: 0;
+    min-width: 300px;
+  }
+
+  .black_wrap_wrap_content:nth-child(n + 2) {
+    margin-left: 24px;
+  }
+
+  .black_wrap .wrapper {
+    margin-top: 70px !important;
+    align-items: flex-start;
+    overflow: auto;
+  }
+
+  .swiper-slide {
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: unset;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: none !important;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    display: none !important;
+  }
+
+  .wrap_how_we_work_1 {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-request {
+    margin-bottom: 60px;
+  }
+
+  .footer-social {
+    gap: 110px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: flex-start;
+    gap: 73px;
+    padding-bottom: 23px;
+  }
+
+  .footer-name:last-child {
+    margin-left: 240px;
+  }
 }
