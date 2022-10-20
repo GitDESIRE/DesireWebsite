@@ -2018,3 +2018,25 @@ nav {
     width: 996px;
     height: 4208px;
 }
+
+
+/* tocha */
+
+
+/* projects-mobile */
+
+.projects-mobile {
+    background: #9AD351;
+    padding-top: 170px;
+    padding-bottom: 169px;
+}
+
+.projects-mobile .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-picture {
+    display: flex;
+    gap: 59px;
+}
