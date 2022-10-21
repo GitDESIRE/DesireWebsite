@@ -598,11 +598,11 @@ nav {
 
 /* Main */
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
 
 .main_container {
   margin: 150px 0;
@@ -723,7 +723,6 @@ nav {
   border: 1px solid #9ad351;
   padding: 15px;
   position: relative;
-
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -1130,6 +1129,7 @@ nav {
 }
 
 /* SEO */
+
 .seo-banner-top {
   width: 100%;
   display: flex;
@@ -1362,7 +1362,6 @@ nav {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
-  /* Grey */
   color: #767676;
   opacity: 0.8;
 }
@@ -1830,6 +1829,7 @@ nav {
   text-align: center;
   color: #282828;
 }
+
 /* TariffsPage */
 
 /* TariffsPage Start */
@@ -1889,6 +1889,16 @@ nav {
   font-size: 15px;
   line-height: 18px;
   color: #767676;
+}
+
+/* NOISELEND */
+
+/* BANNER */
+
+.banner {
+  background: #282828;
+  padding-top: 100px;
+  padding-bottom: 273px;
 }
 
 @media (max-width: 980px) {
@@ -1989,4 +1999,120 @@ nav {
   .footer-name:last-child {
     margin-left: 240px;
   }
+}
+.banner .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.banner-title {
+  width: 100%;
+  max-width: 753px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  background: linear-gradient(89.91deg, #9ad351 0.08%, #628e55 72.19%, #2a4858 150.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner-description-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.banner-description-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.banner-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #767676;
+}
+
+.banner-link:hover {
+  text-decoration: underline;
+}
+
+/* ABOUT-PROJECT */
+
+.about-project {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-project .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-project-text {
+  padding-left: 658px;
+}
+
+.about-project-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.about-project-description {
+  width: 100%;
+  max-width: 588px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282828;
+}
+
+/* PROJECT */
+
+.projects {
+  width: 100%;
+  height: 100%;
+  background: #282828;
+  padding-top: 184px;
+  padding-bottom: 190px;
+}
+
+.projects .wrapper {
+  text-align: center;
+}
+
+.projects-img {
+  width: 996px;
+  height: 4208px;
 }
