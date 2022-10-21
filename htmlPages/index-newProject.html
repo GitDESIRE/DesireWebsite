@@ -31,6 +31,25 @@
                   </li>
               </ul>
           </nav>
+          <div class="burger-menu">
+            <a href="" class="burger-menu_button">
+                <span class="burger-menu_lines"></span>
+            </a>
+            <nav class="burger-menu_nav">
+                <a href="#" class="burger-menu_link">
+                    О нас
+                </a>
+                <div class="burger-menu_link openLink">Услуги
+                    <div class="hidden-links">
+                        <a href="#" class="burger-menu_hidden-link">Web-дизайн и разработка</a>
+                        <a href="#" class="burger-menu_hidden-link">SEO</a>
+                        <a href="#" class="burger-menu_hidden-link">Комплексные тарифы</a>
+                    </div>
+                </div>
+                <a href="#" class="burger-menu_link">Проекты</a>
+                <a href="#" class="burger-menu_link">Оставить заявку</a>
+            </nav>
+        </div>
       </div>
     </header>
   <main class="main">
@@ -40,7 +59,7 @@
         <p>Кратко опишите свою задачу, и мы свяжемся с вами в кратчайшие сроки</p>
       </section>
       <section class="aside_container">
-        <form class="newProject_form" method="post">
+        <form class="newProject_form" name="newProject_form">
           <div class="inputsBox">
             <div class="inputsBox_leftSide">
               <label for="name"><span class="label-title">Введите своё имя</span></label>
@@ -159,4 +178,5 @@
   </footer>
   </body>
   <script src="../js/newProject.js"></script>
+  <script src="../js/burgerMenu.js"></script>
 </html>
