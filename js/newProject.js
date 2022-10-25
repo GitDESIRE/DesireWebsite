@@ -54,6 +54,10 @@ form.onsubmit = function(e) {
   form.appendChild(resetBtn);
   resetBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    mainContainer.innerHTML = `
+    <h1 class="title">Начнём ваш проект</h1>
+    <p>Кратко опишите свою задачу, и мы свяжемся с вами в кратчайшие сроки</p>
+    `;
     form.innerHTML = `
     <div class="inputsBox">
     <div class="inputsBox_leftSide">
@@ -85,9 +89,7 @@ form.onsubmit = function(e) {
       <label for="file"><span class="label-title">Прикрепите документ</span></label>
       <input class="file-input" type="file" name="file" id="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
     </button>
-    <div class="submit-button_box">
-      <button class="submit-button" type="submit">Отправить</button>
-    </div>
+    <button class="submit-button" type="submit">Отправить</button>
   </div>
   <div class="agreement_box">
     <label class="checkbox-label">

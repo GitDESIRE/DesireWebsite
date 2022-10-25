@@ -2149,7 +2149,7 @@ nav {
   .burger-menu {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 23px;
     right: 10px;
     z-index: 30;
     width: 50px;
@@ -2385,12 +2385,61 @@ nav {
   .buttonsBox {
     margin-top: 40px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .submit-button,
-  .reset-button {
+  .reset-button,
+  .file-button,
+  .agreement_box {
     max-width: 300px;
     width: 100%;
+  }
+
+  .reset-button {
+    margin-top: 110px !important;
+  }
+
+  .agreement_box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main .aside_container {
+    margin-bottom: 82px;
+  }
+
+  .agreement_box .checkbox-label {
+    margin-right: 0;
+  }
+
+  .footer-request {
+    margin-bottom: 6px;
+  }
+
+  .footer-top {
+    gap: 42px;
+  }
+
+  .footer-bottom {
+    padding: 12px 0 16px;
+    gap: 0;
+  }
+
+  .footer-bottom-list {
+    gap: 0;
+    width: 100%;
+  }
+
+  .footer-author {
+    margin-top: 50px;
+  }
+
+  .footer-name:last-child {
+    margin-left: 5px;
+  }
+
+  .footer-bottom span {
+    margin: 8px 0 0 0;
   }
 }
