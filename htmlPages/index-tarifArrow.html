@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
   </style>
 </head>
 <body>
@@ -31,23 +33,44 @@
                 </li>
             </ul>
         </nav>
+        <div class="burger-menu">
+          <a href="" class="burger-menu_button">
+              <span class="burger-menu_lines"></span>
+          </a>
+          <nav class="burger-menu_nav">
+              <a href="#" class="burger-menu_link">
+                  О нас
+              </a>
+              <div class="burger-menu_link openLink">Услуги
+                  <div class="hidden-links">
+                      <a href="#" class="burger-menu_hidden-link">Web-дизайн и разработка</a>
+                      <a href="#" class="burger-menu_hidden-link">SEO</a>
+                      <a href="#" class="burger-menu_hidden-link">Комплексные тарифы</a>
+                  </div>
+              </div>
+              <a href="#" class="burger-menu_link">Проекты</a>
+              <a href="#" class="burger-menu_link">Оставить заявку</a>
+          </nav>
+        </div>
     </div>
   </header>
   <main>
     <section class="banner">
       <div class="wrapper">
+        <div class="content">
           <div class="seo-banner-top">
-              <h1 class="title arrow-title">Разработка сайта NoCode - ARROW</h1>
-              <p class="seo-banner-section"><a href="#">Услуги</a> / <a href="#">Комплексные тарифы</a>  / Комплексное решение «ARROW»</p>
+            <h1 class="title arrow-title">Разработка сайта NoCode - ARROW</h1>
+            <p class="seo-banner-section"><a href="#">Услуги</a> / <a href="#">Комплексные тарифы</a>  / Комплексное решение «ARROW»</p>
           </div>
           <div class="seo-banner-bottom">
-              <p class="seo-banner-description">Что такое разработка NoCode и почему она требует в разы меньше времени и денежных вложений?</p>
-              <div class="banner-content">
-                  <p class="seo-content-text">Программирование NoCode - дословно: «программирование без кода», - в последнее время становится все более и более востребованным на рынке IT-продуктов. 
-                  </p>
-                  <p class="seo-content-text">Простыми словами: этот тип разработки позволяет создавать сайты и мобильные приложения с помощью визуального моделирования по принципу «конструктора», с минимальным задействованием кода или вовсе без него.</p>
-              </div>
+            <p class="seo-banner-description">Что такое разработка NoCode и почему она требует в разы меньше времени и денежных вложений?</p>
+            <div class="banner-content">
+                <p class="seo-content-text">Программирование NoCode - дословно: «программирование без кода», - в последнее время становится все более и более востребованным на рынке IT-продуктов. 
+                </p>
+                <p class="seo-content-text">Простыми словами: этот тип разработки позволяет создавать сайты и мобильные приложения с помощью визуального моделирования по принципу «конструктора», с минимальным задействованием кода или вовсе без него.</p>
+            </div>
           </div>
+        </div>
       </div>
     </section>
     <section class="tarif-main">
@@ -156,4 +179,5 @@
     </div>
   </footer>
 </body>
+<script src="../js/burgerMenu.js"></script>
 </html>
