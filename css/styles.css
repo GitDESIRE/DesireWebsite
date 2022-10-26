@@ -31,6 +31,24 @@ body {
   --container-width: 1199px;
 }
 
+/* 404 PAGE */
+
+.content-404 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-text_404 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* 404 PAGE */
+
 /* MAIN INDEX */
 
 .logo-link {
@@ -972,6 +990,7 @@ nav {
 /* BANNER */
 
 .banner {
+  width: 100%;
   position: relative;
   background: #282828;
   padding-top: 130px;
@@ -2171,6 +2190,10 @@ nav {
   font-size: 14px;
   line-height: 17px;
   color: #767676;
+}
+
+.content {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
