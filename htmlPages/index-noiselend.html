@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desire</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
@@ -56,81 +58,80 @@
     <main class="main">
         <section class="banner">
             <div class="wrapper">
-                <div class="content">
-                    <div class="draft">
-                        <h1 class="title">Наши проекты</h1>
-                        <ul class="draft-list">
-                            <li class="draft-item">
-                                <a href="#" class="draft-link">Веб-сайты</a>
-                            </li>
-                            <li class="draft-item">
-                                <a href="#" class="draft-link">Мобильные приложения</a>
-                            </li>
-                            <li class="draft-item">
-                                <a href="#" class="draft-link">SEO</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="cases-list">
-                        <li class="cases-item">
-                            <img src="../assets/img/image 9.png" alt="Hike. Проект для хайкинга." class="cases-img">
-                            <div class="ceses-text">
-                                <a href="#" class="cases-name">Hike.
-                                    Проект для хайкинга.</a>
-                                <a href="#" class="case-link">Посмотреть
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 8.82422L9 0.824219" stroke="#9AD351" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M1 0.824219H9V8.82422" stroke="#9AD351" stroke-linecap="square" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
+                <div class="banner-left">
+                    <h1 class="banner-title">
+                        Информационный <br> блог “NOICELAND”
+                    </h1>
+                    <ul class="banner-description-list">
+                        <li class="banner-description-item">Frontend разработка:</li>
+                        <li class="banner-description-item">javascript</li>
+                        <li class="banner-description-item">html</li>
+                        <li class="banner-description-item">CSS</li>
+                    </ul>
+                </div>
+                <div class="banner-right">
+                    <ul class="banner-list">
+                        <li class="banner-item">
+                            <a href="#" class="banner-link"> Проекты / </a>
                         </li>
-                        <li class="cases-item">
-                            <img src="../assets/img/image 9 (1).png" alt="Dolfie. Редизайн интрнет-магазина." class="cases-img">
-                            <div class="ceses-text">
-                                <a href="#" class="cases-name">Dolfie. Редизайн интрнет-магазина.</a>
-                                <a href="#" class="case-link">Посмотреть
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 8.82422L9 0.824219" stroke="#9AD351" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M1 0.824219H9V8.82422" stroke="#9AD351" stroke-linecap="square" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
+                        <li class="banner-item">
+                            <a href="#" class="banner-link">  Web-сайты / </a>
                         </li>
-                        <li class="cases-item">
-                            <img src="../assets/img/image 9 (2).png" alt="Рик и морти. Фансайт для мультсериала." class="cases-img">
-                            <div class="ceses-text">
-                                <a href="#" class="cases-name">Рик и морти. Фансайт для мультсериала.</a>
-                                <a href="#" class="case-link">Посмотреть
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 8.82422L9 0.824219" stroke="#9AD351" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M1 0.824219H9V8.82422" stroke="#9AD351" stroke-linecap="square" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="cases-item">
-                            <img src="../assets/img/image 9 (3).png" alt="Hike. Проект для хайкинга." class="cases-img">
-                            <div class="ceses-text">
-                                <a href="#" class="cases-name">Hike. Проект для хайкинга.</a>
-                                <a href="#" class="case-link">Посмотреть
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 8.82422L9 0.824219" stroke="#9AD351" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M1 0.824219H9V8.82422" stroke="#9AD351" stroke-linecap="square" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
+                        <li class="banner-item">
+                            <a href="#" class="banner-link">Информационный блог “NOICELAND”</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn-project">Показать ещё</a>
                 </div>
             </div>
         </section>
-        <section class="project">
+        <section class="about-project">
             <div class="wrapper">
-                <p class="project-text">Мы предоставляем <span class="text-color">весь спектр услуг</span> для вашего digital-проекта: <span class="text-color">от</span> разработки сайта <span class="text-color">и</span> мобильных приложений <span class="text-color">до </span>                    продвижения проекта в поисковых системах Яндекс и Google.
-                </p>
-                <a href="#" class="btn-project">Начать проект</a>
+                <div class="about-project-text">
+                    <h2 class="about-project-name">О проекте</h2>
+                    <p class="about-project-description">Эстетичный и минималистичный блог, объединяющий работы дизайнеров всего мира и всех направлений — от архитектуры и веб-дизайна до фотографий и анимации.</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="wrapper">
+                <img src="../assets/img/Desktop.jpg" alt="HIKE" class="projects-img">
+            </div>
+        </section>
+        <section class="cases">
+            <div class="wrapper" style="max-width: 100%;">
+              <div class="wrapper">
+                <h2 class="subTitle">Смотреть ещё</h2>
+              </div>
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                        <div class="swiper-slide-main">
+                          <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                          <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                        <div class="swiper-slide-main">
+                          <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                          <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/img/swiper-image.png" alt="Обложка проекта" />
+                        <div class="swiper-slide-main">
+                          <h3 class="swiper-slide-title">Veloretti: Discover <br/> World with Us</h3>
+                          <a href="#">Посмотреть <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх"/> </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Доделать пагинацию у свайпера -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <button class="cases-btn">Смотреть все</button>
             </div>
         </section>
     </main>
@@ -147,7 +148,7 @@
                             <div class="checkbox">
                                 <svg id='arrow-icon' width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.20284L4.7828 10.5L0 5.67571L0.696799 4.97287L4.7828 9.09431L13.3032 0.5L14 1.20284Z" fill="white"/>
-                                </svg>
+                                </svg> 
                             </div> 
                             <span class="rights">Даю согласие на обработку 
                             <a href="#" class="data-link">Персональных данных</a></span>
@@ -198,6 +199,9 @@
             </div>
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/burgerMenu.js"></script>
 </body>
+
+</html>
