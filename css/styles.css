@@ -590,6 +590,35 @@ nav {
   gap: 42.33px;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #9ad351;
+  min-width: 260px;
+  z-index: 10;
+}
+
+.dropdown_content a {
+  color: #282828;
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown_content a:hover {
+  background-color: #628e55;
+}
+
 .nav-list_link {
   font-weight: 500;
   font-size: 16px;
