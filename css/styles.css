@@ -1201,15 +1201,33 @@ nav {
 .tabs .hidden-wrapper {
   width: 100%;
   max-width: 1199px;
-  min-height: 281px;
-  padding-top: 40px;
-  padding-bottom: 24px;
+  padding: 41px 0;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
   cursor: pointer;
   position: relative;
   border-bottom: 1px solid #767676;
+}
+
+.hidden-content .hidden-wrapper .tab-wrapper {
+  min-height: unset;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+}
+
+.hidden-content .hidden-wrapper .tab-wrapper h4 {
+  margin-right: 400px;
+  margin-bottom: 0;
+}
+
+.hidden-content .hidden-wrapper.toggled .tab-wrapper.opened h4 {
+  margin-right: 30px;
+}
+
+.hidden-content .hidden-wrapper.toggled .tab-wrapper.opened {
+  margin-top: 0 !important;
 }
 
 .tabs .tab-wrapper {
@@ -1260,6 +1278,10 @@ nav {
   transition: transform 0.13s ease;
 }
 
+.hidden-content .hidden-wrapper .tab-wrapper .toggle {
+  margin-left: 0;
+}
+
 .tabs .tab input {
   display: none;
 }
@@ -1269,11 +1291,13 @@ nav {
   margin-bottom: 80px;
 }
 
-.tabs .tab input:checked + h3 + .toggle svg path {
+.tabs .tab input:checked + h3 + .toggle svg path,
+.tabs .tab .hidden-content input:checked + h4 + .toggle svg path {
   stroke: #fff;
 }
 
-.tabs .tab input:checked + h3 + .toggle {
+.tabs .tab input:checked + h3 + .toggle,
+.tabs .tab .hidden-content input:checked + h4 + .hidden-content + .toggle {
   transform: rotate(135deg);
 }
 
@@ -1283,6 +1307,10 @@ nav {
 
 .tabs .tab input:checked + h3 + .toggle + .btn + .text {
   display: inline-block;
+}
+
+.hidden-content .hidden-wrapper .tab-wrapper.opened {
+  align-items: flex-start;
 }
 
 .opened {
@@ -1634,7 +1662,6 @@ nav {
 .desicionsBox {
   display: flex;
   gap: 24px;
-  margin-bottom: 150px;
 }
 
 .desicionBox {
