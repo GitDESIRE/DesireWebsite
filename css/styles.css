@@ -594,6 +594,10 @@ nav {
   position: relative;
 }
 
+.nav-list_item span {
+  cursor: pointer;
+}
+
 .dropdown_content {
   display: none;
   position: absolute;
@@ -2460,6 +2464,13 @@ nav {
   .personal-data .agreement_box {
     margin-left: 285px;
   }
+
+  .tabs .tab {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 750px) {
 }
 
 @media (max-width: 700px) {
