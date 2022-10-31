@@ -64,6 +64,7 @@ body {
   position: absolute;
   z-index: 0;
   cursor: default;
+  user-select: none;
 }
 
 .p_1 {
@@ -1051,12 +1052,6 @@ nav {
   padding-bottom: 254px;
 }
 
-/* .banner .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 .banner-top {
   display: flex;
   align-items: baseline;
@@ -1148,6 +1143,11 @@ nav {
 
 .project {
   padding: 220px 0;
+  position: relative;
+}
+
+.project_back {
+  position: absolute;
 }
 
 .project .wrapper {
@@ -2631,18 +2631,18 @@ nav {
     gap: 48px;
     align-items: center;
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translate(150%, 11%);
+    transform: translate(150%, 70px);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     background-color: #282828;
   }
 
   .burger-menu_active .burger-menu_nav {
-    transform: translate(0, 11%);
+    transform: translate(0, 70px);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
   }
