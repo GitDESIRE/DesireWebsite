@@ -289,7 +289,26 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -24px;
   left: unset;
-  width: 80%;
+  max-width: 1199px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    padding: 0 40px;
+  }
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
