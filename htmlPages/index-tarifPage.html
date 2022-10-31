@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desire</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
@@ -24,9 +24,14 @@
                 <li class="nav-list_item">
                     <a href="#" class="nav-list_link">О нас</a>
                 </li>
-                <li class="nav-list_item">
-                    <a href="#" class="nav-list_link">Услуги</a>
-                </li>
+                <li class="nav-list_item dropdown">
+                  <span class="nav-list_link">Услуги</span>
+                  <div class="dropdown_content">
+                    <a href="#">Веб-дизайн и разработка</a>
+                    <a href="#">SEO</a>
+                    <a href="#">Комплексные тарифы</a>
+                  </div>
+              </li>
                 <li class="nav-list_item">
                     <a href="#" class="nav-list_link">Проекты</a>
                 </li>
@@ -61,10 +66,10 @@
         <div class="content">
           <div class="seo-banner-top">
             <h1 class="title">Комплексные тарифы</h1>
-            <p class="seo-banner-section"><a href="#">Услуги</a> / Комплексные тарифы</p>
+            <p class="seo-banner-section"><a href="#">Услуги</a> &nbsp / &nbsp Комплексные тарифы</p>
         </div>
         <div class="seo-banner-bottom">
-            <p class="seo-banner-description">Не знаете с чего начать развивать свой проект на просторах Интернета?</p>
+            <p class="seo-banner-description">Не знаете с чего начать <br/> развивать свой проект <br/> на просторах Интернета?</p>
             <div class="banner-content">
                 <p class="seo-content-text">Разрабатываем, оптимизируем и предлагаем точки роста.
                 </p>
@@ -117,7 +122,7 @@
   <section class="cases">
     <div class="wrapper" style="max-width: 100%;">
       <div class="wrapper">
-        <h2 class="subTitle" style="margin-top: 0;">кейсы</h2>
+        <h2 class="subTitle">кейсы</h2>
       </div>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -143,11 +148,12 @@
                 </div>
               </div>
             </div>
-            <!-- Доделать пагинацию у свайпера -->
-            <div class="swiper-pagination"></div>
+            <!-- переделать кнопки -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
+                      <!-- Доделать пагинацию у свайпера -->
+          <div class="swiper-pagination"></div>
           <button class="cases-btn">Смотреть все</button>
     </div>
   </section>
@@ -208,8 +214,14 @@
                     <a href="#" class="footer-bottom-link">О нас</a>
                 </li>
                 <li class="footer-bottom-item">
-                    <a href="#" class="footer-bottom-link">Услуги</a>
-                </li>
+                  <a href="#" class="footer-bottom-link">SEO</a>
+              </li>
+              <li class="footer-bottom-item">
+                  <a href="#" class="footer-bottom-link">Веб-дизайн и разработка</a>
+              </li>
+              <li class="footer-bottom-item">
+                  <a href="#" class="footer-bottom-link">Комплексные тарифы</a>
+              </li>
                 <li class="footer-bottom-item">
                     <a href="#" class="footer-bottom-link">Проекты</a>
                 </li>
@@ -223,7 +235,7 @@
         </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+  <script src="../js/swiper-bundle.min.js"></script>
   <script src="../js/swiper.js"></script>
   <script src="../js/burgerMenu.js"></script>
 </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
     <title>Desire</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
@@ -24,8 +24,13 @@
                     <li class="nav-list_item">
                         <a href="#" class="nav-list_link">О нас</a>
                     </li>
-                    <li class="nav-list_item">
-                        <a href="#" class="nav-list_link">Услуги</a>
+                    <li class="nav-list_item dropdown">
+                        <span class="nav-list_link">Услуги</span>
+                        <div class="dropdown_content">
+                          <a href="#">Веб-дизайн и разработка</a>
+                          <a href="#">SEO</a>
+                          <a href="#">Комплексные тарифы</a>
+                        </div>
                     </li>
                     <li class="nav-list_item">
                         <a href="#" class="nav-list_link">Проекты</a>
@@ -64,7 +69,7 @@
             <div class="wrapper">
                 <div class="content">
                     <div class="content-text">
-                        <h1 class="title">Cоздаём и продвигаем</h1>
+                        <h1 class="title">Cоздаём <br/> и продвигаем</h1>
                         <p>Мы не только создаём и развиваем digital-проекты, <br /> но и наглядно показываем, как они работают.</p>
                     </div>
                     <a href="#" class="content-logo">
@@ -107,7 +112,7 @@
                             <div>
                                 <p>Ориентируемся на клиента, создаем новое, меняем старое до неузнаваемости!</p>
                                 <div class="white_a"><a href="#">Познакомиться поближе</a>
-                                    <img src="../assets/img/arrow-up-right.png" alt="стрелка вверх">
+                                    <img src="../assets/svg/arrow-up-right.svg" alt="стрелка вверх">
                                 </div>
                             </div>
                         </div>
@@ -218,7 +223,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- Доделать пагинацию у свайпера -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                       </div>
@@ -375,7 +379,13 @@
                         <a href="#" class="footer-bottom-link">О нас</a>
                     </li>
                     <li class="footer-bottom-item">
-                        <a href="#" class="footer-bottom-link">Услуги</a>
+                        <a href="#" class="footer-bottom-link">SEO</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Веб-дизайн и разработка</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Комплексные тарифы</a>
                     </li>
                     <li class="footer-bottom-item">
                         <a href="#" class="footer-bottom-link">Проекты</a>
@@ -385,15 +395,13 @@
                     <p class="footer-name">© </p>
                     <img src="../assets/svg/footerLogo.svg" alt="DESIRE" class="logo-footer">
                     <p class="footer-name"> 2022 Все права защищены</p>
-                    <span class="footer-name">Made by DESIRE</span>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/burgerMenu.js"></script>
 </body>
-
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desire</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
@@ -24,8 +24,13 @@
                     <li class="nav-list_item">
                         <a href="#" class="nav-list_link">О нас</a>
                     </li>
-                    <li class="nav-list_item">
-                        <a href="#" class="nav-list_link">Услуги</a>
+                    <li class="nav-list_item dropdown">
+                        <span class="nav-list_link">Услуги</span>
+                        <div class="dropdown_content">
+                          <a href="#">Веб-дизайн и разработка</a>
+                          <a href="#">SEO</a>
+                          <a href="#">Комплексные тарифы</a>
+                        </div>
                     </li>
                     <li class="nav-list_item">
                         <a href="#" class="nav-list_link">Проекты</a>
@@ -69,17 +74,7 @@
                     </ul>
                 </div>
                 <div class="banner-right">
-                    <ul class="banner-list">
-                        <li class="banner-item">
-                            <a href="#" class="banner-link"> Проекты / </a>
-                        </li>
-                        <li class="banner-item">
-                            <a href="#" class="banner-link">  Web-сайты / </a>
-                        </li>
-                        <li class="banner-item">
-                            <a href="#" class="banner-link">Телеграм чат сайта TOCHA</a>
-                        </li>
-                    </ul>
+                    <p class="seo-banner-section"><a href="#">Проекты</a> &nbsp / &nbsp <a href="#"> Web-сайты</a> &nbsp / &nbsp Веб-сайт для проекта "TOCHA"</p>
                 </div>
             </div>
         </section>
@@ -138,8 +133,8 @@
                     <!-- Доделать пагинацию у свайпера -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
                   </div>
+                  <div class="swiper-pagination"></div>
                   <button class="cases-btn">Смотреть все</button>
             </div>
         </section>
@@ -156,12 +151,11 @@
                             <input type="checkbox" class="checkbox-input">
                             <div class="checkbox">
                                 <svg id='arrow-icon' width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.20284L4.7828 10.5L0 5.67571L0.696799 4.97287L4.7828 9.09431L13.3032 0.5L14 1.20284Z" fill="white"/>
-</svg>
-
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.20284L4.7828 10.5L0 5.67571L0.696799 4.97287L4.7828 9.09431L13.3032 0.5L14 1.20284Z" fill="white"/>
+                                </svg>
                             </div> 
                             <span class="rights">Даю согласие на обработку 
-<a href="#" class="data-link">Персональных данных</a></span>
+                            <a href="#" class="data-link">Персональных данных</a></span>
                         </label>
                         <a href="#" class="footer-btn">Оставить заявку</a>
                     </form>
@@ -194,7 +188,13 @@
                         <a href="#" class="footer-bottom-link">О нас</a>
                     </li>
                     <li class="footer-bottom-item">
-                        <a href="#" class="footer-bottom-link">Услуги</a>
+                        <a href="#" class="footer-bottom-link">SEO</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Веб-дизайн и разработка</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Комплексные тарифы</a>
                     </li>
                     <li class="footer-bottom-item">
                         <a href="#" class="footer-bottom-link">Проекты</a>
@@ -209,7 +209,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
     <script src="../js/burgerMenu.js"></script>
 </body>
