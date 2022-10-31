@@ -1044,23 +1044,18 @@ nav {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   background: #282828;
   padding-top: 130px;
   padding-bottom: 254px;
 }
 
-/* .white_wrap,
-.black_wrap {
-  height: 100vh;
-} */
-
-.banner .wrapper {
+/* .banner .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .banner-top {
   display: flex;
