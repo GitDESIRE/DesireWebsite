@@ -1146,10 +1146,6 @@ nav {
   position: relative;
 }
 
-.project_back {
-  position: absolute;
-}
-
 .project .wrapper {
   display: flex;
   flex-direction: column;
@@ -1785,7 +1781,7 @@ nav {
 
 .desicion-btns {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .about-btn,
@@ -1842,6 +1838,7 @@ nav {
 
 .swiper-slide .slider-img {
   max-height: 340px;
+  object-fit: cover;
 }
 
 .swiper-slide-prev::after,
@@ -1907,11 +1904,6 @@ nav {
 }
 
 .swiper-pagination {
-  bottom: -14px !important;
-  /* left: 115px !important; */
-  /* width: 80% !important; */
-  height: 1px;
-  background-color: #9ad351;
   opacity: 0.5;
   position: relative;
 }
@@ -2783,10 +2775,6 @@ nav {
     margin-right: 0;
   }
 
-  .footer-list:last-child {
-    margin-top: 42px;
-  }
-
   .team-banner-right .content-logo .logo-circle {
     top: 75%;
   }
@@ -2904,6 +2892,11 @@ nav {
     gap: 42px;
   }
 
+  .footer-item,
+  .footer-link {
+    margin-bottom: 12px;
+  }
+
   .footer-top {
     padding-bottom: 47px;
   }
@@ -2969,7 +2962,7 @@ nav {
   }
 
   .footer-bottom {
-    padding: 12px 0 16px;
+    padding: 20px 0 30px;
     gap: 0;
   }
 

@@ -1,4 +1,3 @@
-const slides = document.querySelectorAll('.swiper-slide');
 const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto',
   centeredSlides: true,
@@ -12,8 +11,17 @@ const swiper = new Swiper('.swiper', {
   },
   pagination: {
     el: '.swiper-pagination',
-    // renderBullet: function (index, className) {
-
-    // }
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + '</span>';
+    },
   },
+})
+
+const slides = Array.from(document.querySelectorAll('.swiper-slide'));
+const bullets = Array.from(document.querySelectorAll('.swiper-pagination-bullet'));
+console.log(bullets);
+const slidesCount = slides.length;
+const bulletWidth = 100 / slidesCount;
+bullets.forEach((bullet) => {
+  bullet.style.width = bulletWidth + "%";
 })
