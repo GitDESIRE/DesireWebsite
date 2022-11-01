@@ -2,6 +2,67 @@ const fileBtn = document.querySelector('.file-button');
 const fileInput = document.querySelector('.file-input');
 const mainContainer = document.querySelector('.main_container');
 const form = document.forms[0];
+const customSelect = document.getElementsByClassName('custom-select');
+
+for (i = 0; i < customSelect.length; i++) {
+  const selElement = customSelect[i].getElementsByTagName('select')[0];
+  const selectedItem = document.createElement('div');
+  selectedItem.setAttribute('class', 'select-selected');
+  selectedItem.innerHTML = selElement.options[selElement.selectedIndex].innerHTML;
+  customSelect[i].appendChild(selectedItem);
+  const selOptionList = document.createElement('div');
+  selOptionList.setAttribute('class', 'select-items select-hide');
+  for (j = 1; j < selElement.length; j++) {
+    const selOption = document.createElement('div');
+    selOption.innerHTML = selElement.options[j].innerHTML;
+    selOption.addEventListener('click', function() {
+      let selBox = this.parentNode.parentNode.getElementsByTagName('select')[0];
+      let prevSelOption = this.parentNode.previousSibling;
+      for (i = 0; i < selBox.length; i++) {
+        if (selBox.options[i].innerHTML === this.innerHTML) {
+          selBox.selectedIndex = i;
+          prevSelOption.innerHTML = this.innerHTML;
+          const sameSel = this.parentNode.getElementsByClassName('same-as-selected');
+          for (k = 0; k < sameSel.length; k++) {
+            sameSel[k].removeAttribute('class');
+          }
+          this.setAttribute('class', 'same-as-selected');
+          break;
+        }
+      }
+      prevSelOption.click();
+    });
+    selOptionList.appendChild(selOption);
+  }
+  customSelect[i].appendChild(selOptionList);
+  selectedItem.addEventListener('click', function(e) {
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle('select-hide');
+    this.classList.toggle('select-arrow-active');
+  });
+}
+
+function closeAllSelect(element) {
+  let arrNo = [];
+  const selItems = document.getElementsByClassName('select-items');
+  const selectedSel = document.getElementsByClassName('select-selected');
+  for (i = 0; i < selectedSel.length; i++) {
+    if(element == selectedSel[i]) {
+      arrNo.push[i];
+    } else {
+      selectedSel[i].classList.remove('select-arrow-active');
+    }
+  }
+  for (i = 0; i < selItems.length; i++) {
+    if (arrNo.indexOf(i)){
+      selItems[i].classList.add('select-hide');
+    }
+  }
+}
+
+document.addEventListener('click', closeAllSelect);
+
 
 fileInput.addEventListener('change', updateButton);
 
@@ -106,3 +167,4 @@ form.onsubmit = function(e) {
     `
   });
 };
+

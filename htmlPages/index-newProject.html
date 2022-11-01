@@ -72,17 +72,19 @@
               <label for="email"><span class="label-title">Введите свою почту</span></label>
               <input type="email" name="email" id="email" placeholder="EMAIL" required/>
               <label for="category"><span class="label-title">Выберите категорию</span></label>
-              <!-- Кастомизировать селект -->
-              <select type="select" name="category" id="category">
-                <option value="">выберите категорию проекта</option>
-                <option value="SEO">SEO</option>
-                <option value="Лендинг">Лендинг</option>
-                <option value="Корпоративный сайт">Корпоративный сайт</option>
-                <option value="Интернет - магазин">Интернет - магазин</option>
-                <option value="Дополнительные страницы">Дополнительные страницы</option>
-                <option value="Редизайн сайта">Редизайн сайта</option>
-                <option value="Разработка уникального дизайна">Разработка уникального дизайна</option>
-              </select>
+              <!-- TODO: Разобраться почему не получается закрыть повторным нажатием -->
+              <div class="custom-select">
+                <select>
+                  <option value="select">выберите категорию проекта</option>
+                  <option value="SEO">SEO</option>
+                  <option value="Лендинг">Лендинг</option>
+                  <option value="Корпоративный сайт">Корпоративный сайт</option>
+                  <option value="Интернет - магазин">Интернет - магазин</option>
+                  <option value="Дополнительные страницы">Дополнительные страницы</option>
+                  <option value="Редизайн сайта">Редизайн сайта</option>
+                  <option value="Разработка уникального дизайна">Разработка уникального дизайна</option>
+                </select>
+              </div>
             </div>
             <div class="inputsBox_rightSide">
               <label for="tel"><span class="label-title">Введите свой телефон</span></label>
