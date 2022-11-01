@@ -727,7 +727,10 @@ nav {
   color: transparent;
 } /* IE 10+ */
 
-.newProject_form select {
+/* The container must be positioned relative: */
+
+.newProject_form .custom-select {
+  position: relative;
   width: 100%;
   font-size: 11px;
   font-weight: 600;
@@ -740,6 +743,61 @@ nav {
   outline: none;
   transition: all 0.3s linear;
   cursor: pointer;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: '';
+  background-image: url('../assets/svg/select-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  top: -5px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  transform: rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div {
+  padding: 10px;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: #9ad351;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .newProject_form option {
@@ -787,10 +845,14 @@ nav {
 .fileCancel-button {
   position: relative;
   width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .fileCancel-button_stroke2 {
   width: 20px;
+  left: 0;
+  top: 10px;
   border: 1px solid #282828;
   transform: rotate(135deg);
   position: absolute;
@@ -798,6 +860,8 @@ nav {
 
 .fileCancel-button_stroke1 {
   width: 20px;
+  right: 0;
+  top: 10px;
   border: 1px solid #282828;
   transform: rotate(45deg);
   position: absolute;
