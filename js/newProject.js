@@ -38,7 +38,11 @@ for (i = 0; i < customSelect.length; i++) {
   selectedItem.addEventListener('click', function(e) {
     e.stopPropagation();
     closeAllSelect(this);
-    this.nextSibling.classList.toggle('select-hide');
+    if (this.classList.contains('select-arrow-active')) {
+      this.nextSibling.classList.add('select-hide');
+    } else {
+      this.nextSibling.classList.remove('select-hide');
+    }
     this.classList.toggle('select-arrow-active');
   });
 }
@@ -66,39 +70,44 @@ document.addEventListener('click', closeAllSelect);
 
 fileInput.addEventListener('change', updateButton);
 
+const cancelBtn = document.createElement('div');
+cancelBtn.className = 'fileCancel-button';
+const stroke1 = document.createElement('div');
+stroke1.className = 'fileCancel-button_stroke1';
+const stroke2 = document.createElement('div');
+stroke2.className = 'fileCancel-button_stroke2';
+
 function updateButton() {
   let curFile = fileInput.files;
-
-  let cancelBtn = document.createElement('div');
-  cancelBtn.className = 'fileCancel-button';
-  let stroke1 = document.createElement('div');
-  stroke1.className = 'fileCancel-button_stroke1';
-  let stroke2 = document.createElement('div');
-  stroke2.className = 'fileCancel-button_stroke2';
+  console.log(curFile);
   cancelBtn.appendChild(stroke1);
   cancelBtn.appendChild(stroke2);
-  
   fileBtn.style.border = '1px solid rgba(118, 118, 118, 0.3)';
   fileBtn.style.fontSize = '13px';
   fileBtn.style.cursor = 'auto';
   fileBtn.style.justifyContent = 'space-between';
   fileBtn.innerHTML = curFile[0].name;
-    
   fileBtn.appendChild(cancelBtn);
+  fileInput.removeEventListener('change', updateButton);
   cancelBtn.addEventListener('click', deleteFile);
+}
 
-  function deleteFile() {
-    fileInput.value = '';
-    fileBtn.removeChild(cancelBtn);
-    fileBtn.style.border = '1px solid #9AD351';
-    fileBtn.style.fontSize = '16px';
-    fileBtn.style.cursor = 'pointer';
-    fileBtn.style.justifyContent = 'center';
-    fileBtn.innerHTML = `Прикрепить файл <label for="file"><span class="label-title">Прикрепите документ</span></label>
-    <input class="file-input" type="file" name="file" id="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-    `
-    cancelBtn.removeEventListener('click', deleteFile);
-  }
+function deleteFile() {
+  fileInput.value = '';
+  let curFile = fileInput.files;
+  console.log(curFile);
+  fileBtn.removeChild(cancelBtn);
+  fileBtn.style.border = '1px solid #9AD351';
+  fileBtn.style.fontSize = '16px';
+  fileBtn.style.cursor = 'pointer';
+  fileBtn.style.justifyContent = 'center';
+  fileBtn.innerHTML = `Прикрепить файл <label for="file"><span class="label-title">Прикрепите документ</span></label>
+  <input class="file-input" type="file" name="file" id="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+  `
+
+  console.log(fileInput);
+  fileInput.addEventListener('change', updateButton);
+  cancelBtn.removeEventListener('click', deleteFile);
 }
 
 form.onsubmit = function(e) {
@@ -167,4 +176,3 @@ form.onsubmit = function(e) {
     `
   });
 };
-

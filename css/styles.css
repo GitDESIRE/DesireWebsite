@@ -845,10 +845,14 @@ nav {
 .fileCancel-button {
   position: relative;
   width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .fileCancel-button_stroke2 {
   width: 20px;
+  left: 0;
+  top: 10px;
   border: 1px solid #282828;
   transform: rotate(135deg);
   position: absolute;
@@ -856,6 +860,8 @@ nav {
 
 .fileCancel-button_stroke1 {
   width: 20px;
+  right: 0;
+  top: 10px;
   border: 1px solid #282828;
   transform: rotate(45deg);
   position: absolute;
