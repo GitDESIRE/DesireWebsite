@@ -640,13 +640,13 @@ nav {
 
 /* Main */
 
-.main_container {
-  padding-right: 75px;
-}
-
 .main_container,
 .aside_container {
   margin: 150px 0;
+}
+
+.main_container {
+  margin-right: 146px;
 }
 
 .title {
@@ -674,8 +674,14 @@ nav {
 
 .inputsBox {
   display: flex;
-  gap: 68px;
+  flex-direction: column;
+  gap: 24px;
   width: 100%;
+}
+
+.inputsBox_top {
+  display: flex;
+  gap: 68px;
 }
 
 .inputsBox_leftSide,
@@ -731,6 +737,7 @@ nav {
 
 .newProject_form .custom-select {
   position: relative;
+  max-width: 260px;
   width: 100%;
   font-size: 11px;
   font-weight: 600;
@@ -829,6 +836,7 @@ nav {
 
 .file-button {
   display: flex;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   width: 260px;
@@ -842,9 +850,14 @@ nav {
   color: #282828;
 }
 
+.file-button span {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .fileCancel-button {
   position: relative;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   cursor: pointer;
 }
@@ -2371,6 +2384,48 @@ nav {
   .invitation .wrapper {
     gap: 70px;
   }
+
+  .main_container {
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .main .wrapper {
+    flex-direction: column;
+  }
+
+  .main_container {
+    margin: 100px 0 50px;
+  }
+
+  .aside_container {
+    margin: 0 0 100px 0;
+  }
+
+  .inputsBox_top {
+    gap: 24px;
+  }
+
+  .inputsBox_leftSide,
+  .inputsBox_rightSide,
+  .newProject_form input,
+  .newProject_form .custom-select,
+  .file-button,
+  .submit-button {
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .buttonsBox {
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .agreement_box {
+    justify-content: flex-start;
+    margin-left: 312px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2496,10 +2551,6 @@ nav {
 
   .main_container .title {
     max-width: 468px;
-  }
-
-  .newProject_form input {
-    max-width: unset;
   }
 
   .buttonsBox {
@@ -2835,6 +2886,29 @@ nav {
     margin-right: 95px;
   }
 
+  .inputsBox {
+    gap: 48px;
+  }
+
+  .inputsBox_top {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main .main_container {
+    margin-bottom: 25px;
+  }
+
+  .buttonsBox {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .agreement_box {
+    margin-left: 0;
+  }
+
   .price {
     margin-right: 0;
   }
@@ -2973,25 +3047,6 @@ nav {
     margin: 140px 0 10px;
   }
 
-  .inputsBox {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .inputsBox_leftSide,
-  .inputsBox_rightSide {
-    width: 100%;
-  }
-
-  .buttonsBox {
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .submit-button,
-  .reset-button,
-  .file-button,
   .agreement_box,
   .order-btn,
   .about-btn,
@@ -3002,11 +3057,6 @@ nav {
 
   .reset-button {
     margin-top: 110px !important;
-  }
-
-  .agreement_box {
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .main .aside_container {
