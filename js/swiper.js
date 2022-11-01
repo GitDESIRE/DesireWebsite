@@ -20,8 +20,7 @@ const swiper = new Swiper('.swiper', {
 
 const slides = Array.from(document.querySelectorAll('.swiper-slide'));
 const bullets = Array.from(document.querySelectorAll('.swiper-pagination-bullet'));
-console.log(bullets);
-const slidesCount = slides.length - 6;
+const slidesCount = slides.length / 3;
 const bulletWidth = 100 / slidesCount;
 bullets.forEach((bullet) => {
   bullet.style.width = bulletWidth + "%";
