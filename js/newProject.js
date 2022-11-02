@@ -79,23 +79,20 @@ stroke2.className = 'fileCancel-button_stroke2';
 
 function updateButton() {
   let curFile = fileInput.files;
-  console.log(curFile);
   cancelBtn.appendChild(stroke1);
   cancelBtn.appendChild(stroke2);
   fileBtn.style.border = '1px solid rgba(118, 118, 118, 0.3)';
   fileBtn.style.fontSize = '13px';
   fileBtn.style.cursor = 'auto';
   fileBtn.style.justifyContent = 'space-between';
-  fileBtn.innerHTML = curFile[0].name;
+  fileBtn.innerHTML = `<span>${curFile[0].name}</span>`;
   fileBtn.appendChild(cancelBtn);
-  fileInput.removeEventListener('change', updateButton);
   cancelBtn.addEventListener('click', deleteFile);
 }
 
 function deleteFile() {
   fileInput.value = '';
   let curFile = fileInput.files;
-  console.log(curFile);
   fileBtn.removeChild(cancelBtn);
   fileBtn.style.border = '1px solid #9AD351';
   fileBtn.style.fontSize = '16px';
@@ -104,9 +101,6 @@ function deleteFile() {
   fileBtn.innerHTML = `Прикрепить файл <label for="file"><span class="label-title">Прикрепите документ</span></label>
   <input class="file-input" type="file" name="file" id="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
   `
-
-  console.log(fileInput);
-  fileInput.addEventListener('change', updateButton);
   cancelBtn.removeEventListener('click', deleteFile);
 }
 
