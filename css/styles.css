@@ -155,7 +155,7 @@ body {
 
 .team-banner-right .content-logo .logo-circle {
   position: absolute;
-  top: -7%;
+  top: -35px;
   left: -18%;
 }
 
@@ -165,7 +165,7 @@ body {
 
 .team-banner-right .content-logo .logo-arrow {
   left: -7%;
-  top: 10%;
+  top: 50px;
 }
 
 .personal-data .buttonsBox {
@@ -1555,12 +1555,12 @@ nav {
 
 .team-banner .banner-img {
   max-width: 574px;
+  max-height: 100%;
   width: 100%;
 }
 
 .team-banner-left {
-  gap: 245px;
-  margin-right: 240px;
+  gap: 228px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2408,6 +2408,10 @@ nav {
     flex-direction: column;
   }
 
+  .team-banner .wrapper {
+    flex-direction: row;
+  }
+
   .main_container {
     margin: 100px 0 50px;
   }
@@ -2485,6 +2489,10 @@ nav {
   .mainPage-content .content {
     flex-direction: column;
     gap: 0;
+  }
+
+  .team-banner {
+    padding-bottom: 120px;
   }
 
   .swiper {
@@ -2609,7 +2617,7 @@ nav {
   }
 
   .team-banner .wrapper {
-    padding-top: 106px;
+    padding-top: 180px;
   }
 
   .team-banner-left {
@@ -2621,12 +2629,13 @@ nav {
   .team-banner-right .content-logo .logo-circle {
     left: unset;
     right: 0;
+    top: -380px;
   }
 
   .team-banner-right .content-logo .logo-arrow {
     left: unset;
-    right: 6%;
-    top: 12%;
+    right: 55px;
+    top: -295px;
   }
 
   .team-list {
@@ -2670,15 +2679,6 @@ nav {
 
   .seo-banner-section {
     align-self: flex-end;
-  }
-
-  .team-banner-right .content-logo .logo-circle {
-    top: -90%;
-  }
-
-  .team-banner-right .content-logo .logo-arrow {
-    right: 8%;
-    top: -71%;
   }
 
   .team {
@@ -2902,14 +2902,6 @@ nav {
     margin-inline-start: 25px;
   }
 
-  .team-banner-right .content-logo .logo-circle {
-    top: -75%;
-  }
-
-  .team-banner-right .content-logo .logo-arrow {
-    top: -56%;
-  }
-
   .team-banner {
     padding-bottom: 57px;
   }
@@ -3003,12 +2995,12 @@ nav {
   }
 
   .team-banner-right .content-logo .logo-circle {
-    top: 75%;
+    top: 338px;
   }
 
   .team-banner-right .content-logo .logo-arrow {
-    top: 94%;
-    right: 7%;
+    top: 420px;
+    right: 55px;
   }
 
   .team-banner {
@@ -3038,6 +3030,14 @@ nav {
   .white_logo {
     font-size: 40px;
     line-height: 47px;
+  }
+
+  .team-banner-right .content-logo .logo-circle {
+    top: 140px;
+  }
+
+  .team-banner-right .content-logo .logo-arrow {
+    top: 225px;
   }
 
   .white_wrap_p h1 {
@@ -3282,6 +3282,7 @@ nav {
 
   .team-banner-left {
     gap: 24px;
+    margin-bottom: 12px;
   }
 
   .team-banner-description {
@@ -3291,15 +3292,14 @@ nav {
     line-height: 22px;
   }
 
-  .team-banner-right .content-logo .logo-arrow {
-    top: 99%;
-    right: 12%;
-  }
-
   .team-title,
   .invitation-title {
     font-size: 32px;
     line-height: 39px;
+  }
+
+  .team-banner .wrapper {
+    padding-top: 130px;
   }
 
   .team-list {
