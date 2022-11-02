@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 0,
   initialSlide: 1,
   loop: true,
+  grabCursor: true,
   lazyLoading: true,
   navigation: {
     nextEl: '.swiper-button-next',

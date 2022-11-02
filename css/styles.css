@@ -60,10 +60,9 @@ body {
   color: #282828;
   opacity: 0.1;
   text-transform: uppercase;
-  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
+  text-shadow: #9ad351 1px 1px 0, #9ad351 -1px -1px 0, #9ad351 -1px 1px 0, #9ad351 1px -1px 0;
   position: absolute;
   z-index: 0;
-  cursor: default;
   user-select: none;
 }
 
@@ -71,20 +70,20 @@ body {
   top: -36%;
   right: 25%;
   transform: rotate(-30deg);
-  font-size: 450px;
+  font-size: 370px;
   letter-spacing: 20px;
 }
 
 .p_2 {
-  top: 32%;
-  right: 12%;
+  top: 22%;
+  right: 0;
   font-size: 150px;
   letter-spacing: 20px;
 }
 
 .p_3 {
-  bottom: -5%;
-  right: 10%;
+  bottom: 0;
+  right: 0;
   transform: rotate(20deg);
   font-size: 250px;
   letter-spacing: 20px;
@@ -101,6 +100,12 @@ body {
   display: flex;
   align-items: center;
   gap: 245px;
+  z-index: 200;
+}
+
+.mainPage-content .content-text {
+  max-width: 548px;
+  width: 100%;
 }
 
 .content .btn-project {
@@ -118,7 +123,6 @@ body {
 }
 
 .mainPage-content .content-logo {
-  margin-top: 52px;
   position: relative;
 }
 
@@ -657,21 +661,6 @@ nav {
   margin-right: 146px;
 }
 
-.title {
-  max-width: 471px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 94px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  background: linear-gradient(89.91deg, #9ad351 0.08%, #628e55 72.19%, #2a4858 150.64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .main_container p {
   font-size: 15px;
   font-weight: 300;
@@ -1129,6 +1118,7 @@ nav {
 /* BANNER */
 
 .banner {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   position: relative;
@@ -2382,17 +2372,12 @@ nav {
   .white_logo {
     margin-right: 222px;
   }
-  ._01 {
-    width: 155px;
+
+  .p_4 {
+    left: -30%;
+    transform: rotate(-25deg);
   }
-  .qwerty {
-    width: 155px;
-  }
-  .qwerty_wrap {
-    margin-left: 0;
-    margin-right: 0;
-    width: unset;
-  }
+
   .wrap_how_we_work {
     gap: 130px;
   }
@@ -2461,6 +2446,10 @@ nav {
     margin-right: 5%;
   }
 
+  .mainPage-content .content {
+    gap: 140px;
+  }
+
   .footer-social {
     gap: 180px;
   }
@@ -2500,6 +2489,27 @@ nav {
 
   .swiper {
     max-height: 584px;
+  }
+
+  .p_1 {
+    top: 0%;
+    right: 10%;
+    transform: rotate(-25deg);
+    font-size: 180px;
+  }
+
+  .p_2 {
+    right: -50%;
+  }
+
+  .p_3 {
+    right: -70%;
+    bottom: -18%;
+  }
+
+  .p_4 {
+    bottom: 5%;
+    left: -55%;
   }
 
   .footer-social {
@@ -2632,9 +2642,6 @@ nav {
   }
 }
 
-@media (max-width: 750px) {
-}
-
 @media (max-width: 700px) {
   .footer-top {
     flex-direction: column;
@@ -2706,9 +2713,24 @@ nav {
     max-height: 468px;
   }
 
+  .p_1 {
+    z-index: 100;
+    top: 20%;
+    right: 5%;
+  }
+
+  .p_2 {
+    right: -80%;
+  }
+
+  .p_3 {
+    bottom: -30%;
+    right: -100%;
+  }
+
   .header {
     position: fixed;
-    z-index: 100;
+    z-index: 350;
   }
   .nav {
     display: none;
@@ -2829,10 +2851,6 @@ nav {
     transition: all 0.3s ease;
   }
 
-  .desire_p {
-    display: none;
-  }
-
   .swiper-slide {
     padding: 70px 20px 35px;
   }
@@ -2862,11 +2880,6 @@ nav {
     padding: 0;
     border: none;
     border-top: 1px solid #767676;
-  }
-
-  .title {
-    font-size: 40px;
-    line-height: 47px;
   }
 
   .tarif-main .content-box {
@@ -2953,6 +2966,11 @@ nav {
 }
 
 @media (max-width: 600px) {
+  .title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
   .hidden-content .hidden-wrapper .tab-wrapper h4 {
     margin-right: 95px;
   }
@@ -3031,6 +3049,29 @@ nav {
   .h1_wrap {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .p_1 {
+    right: unset;
+    left: -35%;
+    font-size: 72px;
+    letter-spacing: 5px;
+  }
+
+  .p_2 {
+    right: -25%;
+    letter-spacing: 5px;
+    font-size: 72px;
+  }
+
+  .p_3 {
+    display: none;
+  }
+
+  .p_4 {
+    letter-spacing: 15px;
+    bottom: 10%;
+    left: 0;
   }
 
   .desicionBox .desicion-special {
@@ -3127,7 +3168,7 @@ nav {
   }
 
   .banner {
-    padding: 150px 10px 22px;
+    padding: 150px 0 22px;
   }
 
   .main .main_container {
