@@ -236,7 +236,6 @@ body {
 
 .white_wrap_p h1 {
   width: 100%;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
@@ -323,7 +322,6 @@ body {
 
 .h1_wrap {
   padding-bottom: 24px;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -334,7 +332,6 @@ body {
 .wrap_ul {
   margin-top: 24px;
   margin-bottom: 48px;
-  font-family: 'Montserrat';
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -365,7 +362,6 @@ body {
 .wrap_button button {
   color: #ffffff;
   background-color: #282828;
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -407,7 +403,6 @@ body {
 
 .wrap_slider_p {
   width: 306px;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -1198,7 +1193,6 @@ nav {
 .cases-name {
   width: 100%;
   max-width: 223px;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1207,7 +1201,6 @@ nav {
 }
 
 .case-link {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -1631,7 +1624,6 @@ nav {
 }
 
 .name-team {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -1640,7 +1632,6 @@ nav {
 }
 
 .team-function {
-  font-family: 'Montserrat';
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1820,7 +1811,6 @@ nav {
   padding: 4px 8px;
   font-family: 'Inter';
   font-size: 10px;
-  font-weight: 400;
   line-height: 12px;
   color: #767676;
   border: 1px solid #76767680;
@@ -2113,7 +2103,6 @@ nav {
 }
 
 .banner-description-item {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -2128,8 +2117,6 @@ nav {
 }
 
 .banner-link {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -2267,8 +2254,6 @@ nav {
 }
 
 .color-name {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -2292,7 +2277,6 @@ nav {
   margin-top: 30px;
   border-top: 1px solid #767676;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -2301,8 +2285,6 @@ nav {
 
 .color-description1 {
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
@@ -2322,9 +2304,6 @@ nav {
 
 .font-name {
   margin-bottom: 68px;
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 400;
   font-size: 90px;
   line-height: 100%;
   color: #ffffff;
@@ -2343,8 +2322,6 @@ nav {
 
 .text-item1 {
   margin-bottom: 16px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -2353,8 +2330,6 @@ nav {
 }
 
 .text-item {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
