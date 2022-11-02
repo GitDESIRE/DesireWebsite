@@ -299,6 +299,12 @@ body {
   margin-top: 170px;
 }
 
+.whatWeDo-content {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+
 .black_wrap_wrap_content {
   margin-left: 24px;
   width: 100%;
@@ -328,12 +334,18 @@ body {
 .wrap_ul li {
   margin-bottom: 24px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .wrap_ul li:before {
-  color: #9ad351;
-  content: '\2022 ';
-  padding-right: 10px;
+  background-color: #9ad351;
+  border-radius: 50%;
+  content: '';
+  margin-right: 10px;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
 }
 
 .ul_black {
@@ -474,7 +486,6 @@ body {
   display: flex;
   align-items: center;
   width: 1200px;
-  /* margin-left: 200px; */
   margin-right: 200px;
 }
 
@@ -498,14 +509,6 @@ body {
   text-transform: uppercase;
   color: #9ad351;
   text-shadow: none;
-}
-
-._02 {
-  top: -20px;
-}
-
-._01 {
-  width: 185px;
 }
 
 .wrap_how_we_work_1 {
@@ -964,7 +967,7 @@ nav {
   background: none;
   padding-bottom: 10px;
   border: none;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767671;
 }
 
 .form .input:focus {
@@ -2879,6 +2882,40 @@ nav {
   .footer-bottom-list {
     flex-direction: column;
   }
+
+  .wrap_button button {
+    background-color: #9ad351;
+    color: #282828;
+    max-width: 287px;
+    width: 100%;
+  }
+
+  .whatWeDo-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  .black_wrap_wrap_content:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 76px;
+  }
+
+  .h1_wrap {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .wrap_ul {
+    margin-bottom: 24px;
+  }
+
+  .wrap_ul li {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3089,6 +3126,11 @@ nav {
     margin-top: 50px;
   }
 
+  .footer-name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
   .footer-name:last-child {
     margin-left: 15px;
     margin-top: 0;
@@ -3201,5 +3243,9 @@ nav {
 
   .forms {
     width: 100%;
+  }
+
+  .wrap_ul {
+    margin-inline-start: 5px;
   }
 }
