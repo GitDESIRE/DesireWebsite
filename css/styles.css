@@ -299,11 +299,22 @@ body {
   margin-top: 170px;
 }
 
+.whatWeDo-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+
 .black_wrap_wrap_content {
-  margin-left: 24px;
   width: 100%;
   max-width: 384px;
   color: #ffffff;
+}
+
+.black_wrap_wrap_content:nth-child(n + 2) {
+  margin-left: 24px;
 }
 
 .h1_wrap {
@@ -328,12 +339,18 @@ body {
 .wrap_ul li {
   margin-bottom: 24px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .wrap_ul li:before {
-  color: #9ad351;
-  content: '\2022 ';
-  padding-right: 10px;
+  background-color: #9ad351;
+  border-radius: 50%;
+  content: '';
+  margin-right: 10px;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
 }
 
 .ul_black {
@@ -474,7 +491,6 @@ body {
   display: flex;
   align-items: center;
   width: 1200px;
-  /* margin-left: 200px; */
   margin-right: 200px;
 }
 
@@ -498,14 +514,6 @@ body {
   text-transform: uppercase;
   color: #9ad351;
   text-shadow: none;
-}
-
-._02 {
-  top: -20px;
-}
-
-._01 {
-  width: 185px;
 }
 
 .wrap_how_we_work_1 {
@@ -964,7 +972,7 @@ nav {
   background: none;
   padding-bottom: 10px;
   border: none;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767671;
 }
 
 .form .input:focus {
@@ -1807,13 +1815,22 @@ nav {
   position: relative;
 }
 
-.desicion-special {
+.desicionBox span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.desicionBox .desicion-special {
   position: absolute;
   top: 6px;
   right: 6px;
   padding: 4px 8px;
   font-family: 'Inter';
   font-size: 10px;
+  font-weight: 400;
   line-height: 12px;
   color: #767676;
   border: 1px solid #76767680;
@@ -1844,16 +1861,27 @@ nav {
 }
 
 .desicionBox ul {
-  list-style-type: disc;
   margin: 12px 0 36px;
   line-height: 40px;
-  padding-inline-start: 20px;
+  padding-inline-start: 10px;
 }
 
 .desicionBox li {
   font-weight: 300;
   font-size: 15px;
   color: #282828;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.desicionBox li::before {
+  content: '';
+  background-color: #282828;
+  display: inline-block;
+  min-width: 3px;
+  height: 3px;
+  border-radius: 50%;
 }
 
 .desicion-btns {
@@ -2470,6 +2498,10 @@ nav {
     gap: 0;
   }
 
+  .swiper {
+    max-height: 584px;
+  }
+
   .footer-social {
     gap: 0;
     justify-content: space-between;
@@ -2669,6 +2701,11 @@ nav {
   .banner {
     padding-bottom: 100px;
   }
+
+  .swiper {
+    max-height: 468px;
+  }
+
   .header {
     position: fixed;
     z-index: 100;
@@ -2822,7 +2859,7 @@ nav {
   }
 
   .desicionBox {
-    padding: 24px 0;
+    padding: 0;
     border: none;
     border-top: 1px solid #767676;
   }
@@ -2878,6 +2915,40 @@ nav {
 
   .footer-bottom-list {
     flex-direction: column;
+  }
+
+  .wrap_button button {
+    background-color: #9ad351;
+    color: #282828;
+    max-width: 287px;
+    width: 100%;
+  }
+
+  .whatWeDo-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  .black_wrap_wrap_content:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 76px;
+  }
+
+  .h1_wrap {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .wrap_ul {
+    margin-bottom: 24px;
+  }
+
+  .wrap_ul li {
+    margin-bottom: 12px;
   }
 }
 
@@ -2962,6 +3033,10 @@ nav {
     line-height: 20px;
   }
 
+  .desicionBox .desicion-special {
+    display: none;
+  }
+
   .ul_white {
     padding-top: 80px;
   }
@@ -2985,8 +3060,20 @@ nav {
     margin-bottom: 80px;
   }
 
+  .swiper-slide {
+    padding-top: 35px;
+  }
+
   .ul_black {
     margin-top: 80px;
+  }
+
+  .desicionBox li {
+    line-height: 18px;
+  }
+
+  .desicionBox li:nth-child(n + 2) {
+    margin-top: 24px;
   }
 
   .black_wrap {
@@ -3089,6 +3176,11 @@ nav {
     margin-top: 50px;
   }
 
+  .footer-name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
   .footer-name:last-child {
     margin-left: 15px;
     margin-top: 0;
@@ -3125,6 +3217,7 @@ nav {
   .desicion-title {
     font-size: 16px;
     line-height: 20px;
+    margin: 24px 0;
   }
 
   .desicionsBox:last-child {
@@ -3133,6 +3226,7 @@ nav {
 
   .desicionsBox {
     margin-bottom: 0;
+    padding-bottom: 25px;
   }
 
   .project-text {
@@ -3201,5 +3295,9 @@ nav {
 
   .forms {
     width: 100%;
+  }
+
+  .wrap_ul {
+    margin-inline-start: 5px;
   }
 }
