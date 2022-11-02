@@ -300,16 +300,21 @@ body {
 }
 
 .whatWeDo-content {
+  width: 100%;
   display: flex;
+  align-items: center;
   overflow: auto;
   padding-bottom: 70px;
 }
 
 .black_wrap_wrap_content {
-  margin-left: 24px;
   width: 100%;
   max-width: 384px;
   color: #ffffff;
+}
+
+.black_wrap_wrap_content:nth-child(n + 2) {
+  margin-left: 24px;
 }
 
 .h1_wrap {
