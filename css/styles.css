@@ -1908,8 +1908,12 @@ nav {
 
 .cases .wrapper {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
+}
+
+.cases .wrapper .wrapper .subTitle {
+  align-self: flex-start;
 }
 
 .cases .wrapper .swiper-pagination {
