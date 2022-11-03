@@ -676,6 +676,11 @@ nav {
   gap: 68px;
 }
 
+.inputsBox_bot {
+  display: flex;
+  gap: 34px;
+}
+
 .inputsBox_leftSide,
 .inputsBox_rightSide {
   display: flex;
@@ -2399,6 +2404,10 @@ nav {
     gap: 24px;
   }
 
+  .inputsBox_bot {
+    gap: 12px;
+  }
+
   .inputsBox_leftSide,
   .inputsBox_rightSide,
   .newProject_form input,
@@ -2949,6 +2958,11 @@ nav {
   .inputsBox_top {
     flex-direction: column;
     gap: 0;
+  }
+
+  .inputsBox_bot {
+    flex-direction: column;
+    gap: 24px;
   }
 
   .main .main_container {
