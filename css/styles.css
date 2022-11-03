@@ -4,6 +4,10 @@ ul {
   padding: 0;
 }
 
+main {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #757575;
@@ -24,7 +28,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -186,7 +190,7 @@ body {
 
 .div_ul li {
   display: inline;
-  font-family: 'Inter';
+  font-family: 'Raleway';
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
@@ -1215,7 +1219,7 @@ nav {
 /* PROJECT */
 
 .project {
-  padding: 220px 0;
+  margin: 220px 0;
   position: relative;
 }
 
@@ -1264,13 +1268,12 @@ nav {
 .seo-banner-section {
   font-weight: 500;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 20px;
   color: #767676;
 }
 
 .seo-banner-bottom {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 72px;
   gap: 24px;
@@ -1530,7 +1533,6 @@ nav {
 .price {
   margin-right: 296px;
   margin-top: 0;
-  font-family: 'Inter';
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1814,7 +1816,7 @@ nav {
   top: 6px;
   right: 6px;
   padding: 4px 8px;
-  font-family: 'Inter';
+  font-family: 'Montserrat';
   font-size: 10px;
   line-height: 12px;
   color: #767676;
@@ -1857,7 +1859,7 @@ nav {
   color: #282828;
   display: flex;
   gap: 10px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .desicionBox li::before {
@@ -1921,13 +1923,13 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 80px 80px 50px;
+  padding: 50px 80px 50px;
   background-color: #282828;
   transition: background-color 1s linear !important;
 }
 
 .swiper-slide .slider-img {
-  max-height: 340px;
+  max-height: 400px;
   object-fit: cover;
 }
 
@@ -1949,7 +1951,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
 }
 
 .swiper-slide-title {
@@ -2041,12 +2042,23 @@ nav {
   width: 100%;
 }
 
-.tarif-main .content-box ul {
-  list-style-type: disc;
-}
-
 .tarif-main .content-box li:nth-child(n + 2) {
   margin-top: 24px;
+}
+
+.tarif-main .content-box li {
+  display: flex;
+}
+
+.tarif-main .content-box li::before {
+  content: '';
+  background-color: #282828;
+  display: block;
+  margin-right: 10px;
+  margin-top: 8px;
+  min-width: 3px;
+  height: 3px;
+  border-radius: 50%;
 }
 
 .tarif-main .content-box span {
@@ -2180,7 +2192,7 @@ nav {
 }
 
 .projects-img {
-  width: 996px;
+  max-width: 996px;
   height: 100%;
 }
 
@@ -2203,6 +2215,10 @@ nav {
 .mobile-picture {
   display: flex;
   gap: 59px;
+}
+
+.mobile-picture img:nth-child(n + 3) {
+  margin-left: 295px;
 }
 
 /* dolfie */
@@ -2281,7 +2297,7 @@ nav {
   padding-top: 20px;
   margin-top: 30px;
   border-top: 1px solid #767676;
-  font-family: 'Inter';
+  font-family: 'Raleway';
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -2289,7 +2305,7 @@ nav {
 }
 
 .color-description1 {
-  font-family: 'Inter';
+  font-family: 'Raleway';
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
@@ -2298,7 +2314,7 @@ nav {
 .typography {
   display: flex;
   align-items: flex-start;
-  gap: 287px;
+  justify-content: space-between;
 }
 
 .font {
@@ -2380,6 +2396,22 @@ nav {
 
   .main_container {
     margin-right: 48px;
+  }
+
+  .mobile-picture img:nth-child(n + 3) {
+    margin-left: 0;
+  }
+
+  .mobile-picture {
+    gap: 106px;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .mobile-picture img {
+    object-fit: scale-down;
+    max-width: 100%;
   }
 }
 
@@ -2635,6 +2667,20 @@ nav {
   }
 }
 
+@media (max-width: 800px) {
+  .seo-banner-top {
+    flex-direction: column-reverse;
+  }
+
+  .seo-banner-section {
+    align-self: flex-end;
+  }
+
+  .banner-title {
+    font-size: 62px;
+  }
+}
+
 @media (max-width: 700px) {
   .footer-top {
     flex-direction: column;
@@ -2655,14 +2701,6 @@ nav {
     align-items: flex-start;
     gap: 50px;
     padding-bottom: 23px;
-  }
-
-  .seo-banner-top {
-    flex-direction: column-reverse;
-  }
-
-  .seo-banner-section {
-    align-self: flex-end;
   }
 
   .team {
@@ -2691,6 +2729,18 @@ nav {
 @media (max-width: 640px) {
   .banner {
     padding-bottom: 100px;
+  }
+
+  .swiper-slide .slider-img {
+    max-height: 300px;
+  }
+
+  .tarif-main .content-box span {
+    margin-left: 0;
+  }
+
+  .mobile-picture {
+    gap: 57px;
   }
 
   .swiper {
@@ -2861,7 +2911,6 @@ nav {
   }
 
   .desicionBox {
-    padding: 0;
     border: none;
     border-top: 1px solid #767676;
   }
@@ -2883,7 +2932,7 @@ nav {
   }
 
   .tarif-main .content-box ul {
-    margin-inline-start: 25px;
+    margin-inline-start: 5px;
   }
 
   .team-banner {
@@ -2942,7 +2991,8 @@ nav {
 }
 
 @media (max-width: 600px) {
-  .title {
+  .title,
+  .banner-title {
     font-size: 40px;
     line-height: 47px;
   }
@@ -3016,6 +3066,10 @@ nav {
 }
 
 @media (max-width: 500px) {
+  .desicionBox {
+    padding: 0;
+  }
+
   .white_logo {
     font-size: 40px;
     line-height: 47px;
@@ -3038,6 +3092,10 @@ nav {
   .h1_wrap {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .seo-banner-bottom {
+    margin-top: 24px;
   }
 
   .p_1 {
@@ -3157,7 +3215,7 @@ nav {
   }
 
   .banner {
-    padding: 150px 0 22px;
+    padding: 150px 0 100px;
   }
 
   .main .main_container {
