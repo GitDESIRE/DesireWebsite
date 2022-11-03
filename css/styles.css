@@ -13,6 +13,10 @@ a {
   color: #757575;
 }
 
+button a {
+  color: #282828;
+}
+
 button {
   cursor: pointer;
 }
