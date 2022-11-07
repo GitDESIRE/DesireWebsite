@@ -3,7 +3,6 @@ const fileBtnText = document.querySelector('.file-button-text');
 const fileInput = document.querySelector('.file-input');
 const mainContainer = document.querySelector('.main_container');
 const form = document.querySelector('.newProject_form');
-const formHtml = form.innerHTML;
 const customSelect = document.getElementsByClassName('custom-select');
 
 for (i = 0; i < customSelect.length; i++) {
@@ -112,6 +111,7 @@ function updateButton() {
 if (form) {
   form.onsubmit = function(e) {
     e.preventDefault();
+    const formHtml = form.innerHTML;
     mainContainerHtml = mainContainer.innerHTML;
     mainContainer.innerHTML = `
       <h1 class="title">Спасибо за обращение!</h1>

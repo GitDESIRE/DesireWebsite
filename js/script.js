@@ -10,9 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
             } else {
                 e.target.parentNode.parentNode.querySelector('.hidden-content').style.display = 'none'
             }
-            // e.target.parentNode.parentNode.querySelectorAll('.hidden').forEach((h) => {
-            //     h.classList.toggle('hidden')
-            // })
         })
     })
 })
