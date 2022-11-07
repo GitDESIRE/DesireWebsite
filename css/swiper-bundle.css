@@ -217,41 +217,27 @@
 .swiper-navigation-disabled .swiper-button-next {
   display: none !important;
 }
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  width: 24px;
-  height: 44px;
-}
-
-.swiper-button-prev:after {
-  background-image: url('../assets/svg/swiper-left.svg');
-}
-
-.swiper-button-next:after {
-  background-image: url('../assets/svg/swiper-right.svg');
-}
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 10px;
   right: auto;
 }
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+
+.swiper-rtl {
   content: '';
 }
+
 .swiper-button-next,
-.swiper-rtl .swiper-button-prev {
+.swiper-rtl {
   right: 10px;
   left: auto;
 }
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+
+.swiper-rtl {
   content: '';
 }
+
 .swiper-button-lock {
   display: none;
 }

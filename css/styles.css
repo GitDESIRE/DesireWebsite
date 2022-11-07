@@ -1930,7 +1930,7 @@ nav {
   flex-direction: column;
   padding: 50px 80px 50px;
   background-color: #282828;
-  transition: background-color 1s linear !important;
+  transition: background-color 0.5s linear !important;
 }
 
 .swiper-slide .slider-img {
@@ -1991,7 +1991,7 @@ nav {
 .swiper-slide-active {
   background-color: #9ad351;
   opacity: 1;
-  transition: background-color 1s linear !important;
+  transition: background-color 0.5s linear !important;
 }
 
 .swiper-slide-active .swiper-slide-main a,
