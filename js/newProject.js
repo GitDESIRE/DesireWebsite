@@ -140,6 +140,7 @@ if (form) {
       e.preventDefault();
       mainContainer.innerHTML = mainContainerHtml;
       form.innerHTML = formHtml;
+      document.location.reload(true);
     });
   };
 };
