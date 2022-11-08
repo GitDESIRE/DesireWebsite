@@ -758,24 +758,37 @@ nav {
 .select-selected {
   background-color: transparent;
   height: 23px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Style the arrow inside the select element: */
-.select-selected:after {
+.select-button {
+  position: relative;
+  min-width: 17px;
+  height: 14px;
+}
+
+.select-button_stroke1,
+.select-button_stroke2 {
   position: absolute;
-  content: '';
-  background-image: url('../assets/svg/select-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  top: -5px;
+  width: 10px;
+  top: 5px;
+  border: 1px solid #282828;
+  background-color: #282828;
+}
+
+.select-button_stroke1 {
+  transform: rotate(-135deg);
+  left: 1px;
+}
+
+.select-button_stroke2 {
+  transform: rotate(135deg);
   right: 0;
-  width: 20px;
-  height: 20px;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
+.select-selected.select-arrow-active .select-button {
   transform: rotate(180deg);
 }
 

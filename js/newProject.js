@@ -9,7 +9,18 @@ for (i = 0; i < customSelect.length; i++) {
   const selElement = customSelect[i].getElementsByTagName('select')[0];
   const selectedItem = document.createElement('div');
   selectedItem.setAttribute('class', 'select-selected');
+  // отрисовка стрелочки для селекта
+  const selectBtn = document.createElement('div');
+  selectBtn.className = 'select-button';
+  const stroke1 = document.createElement('div');
+  stroke1.className = 'select-button_stroke1';
+  const stroke2 = document.createElement('div');
+  stroke2.className = 'select-button_stroke2';
+  selectBtn.appendChild(stroke1);
+  selectBtn.appendChild(stroke2);
+
   selectedItem.innerHTML = selElement.options[selElement.selectedIndex].innerHTML;
+  selectedItem.appendChild(selectBtn);
   customSelect[i].appendChild(selectedItem);
   const selOptionList = document.createElement('div');
   selOptionList.setAttribute('class', 'select-items select-hide');
@@ -23,6 +34,7 @@ for (i = 0; i < customSelect.length; i++) {
         if (selBox.options[i].innerHTML === this.innerHTML) {
           selBox.selectedIndex = i;
           prevSelOption.innerHTML = this.innerHTML;
+          prevSelOption.appendChild(selectBtn);
           const sameSel = this.parentNode.getElementsByClassName('same-as-selected');
           for (k = 0; k < sameSel.length; k++) {
             sameSel[k].removeAttribute('class');
