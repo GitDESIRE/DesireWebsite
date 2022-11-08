@@ -4,10 +4,6 @@ ul {
   padding: 0;
 }
 
-main {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
   color: #757575;
@@ -675,7 +671,7 @@ nav {
 .inputsBox {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
   width: 100%;
 }
 
@@ -684,16 +680,15 @@ nav {
   gap: 68px;
 }
 
-.inputsBox_bot {
-  display: flex;
-  gap: 34px;
+.inputsBox_bot .custom-select:last-child {
+  margin-left: 63px;
 }
 
 .inputsBox_leftSide,
 .inputsBox_rightSide {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 18px;
   width: 50%;
 }
 
@@ -750,10 +745,10 @@ nav {
   color: #282828;
   border: none;
   border-bottom: 1px solid #767676;
-  padding-bottom: 10px;
   outline: none;
   transition: all 0.3s linear;
   cursor: pointer;
+  display: inline-block;
 }
 
 .custom-select select {
@@ -762,6 +757,7 @@ nav {
 
 .select-selected {
   background-color: transparent;
+  height: 23px;
 }
 
 /* Style the arrow inside the select element: */
@@ -2441,8 +2437,8 @@ nav {
     gap: 24px;
   }
 
-  .inputsBox_bot {
-    gap: 12px;
+  .inputsBox_bot .custom-select:last-child {
+    margin-left: 20px;
   }
 
   .inputsBox_leftSide,
@@ -2993,6 +2989,34 @@ nav {
   .wrap_ul li {
     margin-bottom: 12px;
   }
+
+  .inputsBox {
+    gap: 36px;
+  }
+
+  .inputsBox_top {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .buttonsBox {
+    margin-top: 52px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .agreement_box {
+    margin-left: 0;
+  }
+
+  .newProject_form .custom-select {
+    display: block;
+  }
+
+  .inputsBox_bot .custom-select:last-child {
+    margin-left: 0;
+    margin-top: 36px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3006,32 +3030,8 @@ nav {
     margin-right: 95px;
   }
 
-  .inputsBox {
-    gap: 48px;
-  }
-
-  .inputsBox_top {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .inputsBox_bot {
-    flex-direction: column;
-    gap: 24px;
-  }
-
   .main .main_container {
     margin-bottom: 25px;
-  }
-
-  .buttonsBox {
-    margin-top: 40px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .agreement_box {
-    margin-left: 0;
   }
 
   .price {

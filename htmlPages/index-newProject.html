@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
     </style>
     <title>Desire</title>
@@ -72,7 +73,6 @@
                 <input name="name" id="name" placeholder="ИМЯ"/>
                 <label for="email"><span class="label-title">Введите свою почту</span></label>
                 <input type="email" name="email" id="email" placeholder="EMAIL" required/>
-                <label for="category"><span class="label-title">Выберите категорию</span></label>
               </div>
               <div class="inputsBox_rightSide">
                 <label for="tel"><span class="label-title">Введите свой телефон</span></label>
@@ -82,21 +82,28 @@
               </div>
             </div>
             <div class="inputsBox_bot">
-              <div class="custom-select">
-                <select>
-                  <option value="select">выберите категорию проекта</option>
-                  <option value="SEO">SEO</option>
-                  <option value="Лендинг">Лендинг</option>
-                  <option value="Корпоративный сайт">Корпоративный сайт</option>
-                  <option value="Интернет - магазин">Интернет - магазин</option>
-                  <option value="Дополнительные страницы">Дополнительные страницы</option>
-                  <option value="Редизайн сайта">Редизайн сайта</option>
-                  <option value="Разработка уникального дизайна">Разработка уникального дизайна</option>
-                  <option value="Другое">Другое</option>
-                </select>
-              </div>
-              <label for="tarig"><span class="label-title">Тариф</span></label>
-                <input name="tarif" id="tarif" placeholder="ТАРИФ" />
+              <label for="category"><span class="label-title">Выберите категорию</span></label>
+                <div class="custom-select">
+                  <select id="category">
+                    <option value="select">выберите категорию проекта</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Лендинг">Лендинг</option>
+                    <option value="Корпоративный сайт">Корпоративный сайт</option>
+                    <option value="Интернет - магазин">Интернет - магазин</option>
+                    <option value="Дополнительные страницы">Дополнительные страницы</option>
+                    <option value="Редизайн сайта">Редизайн сайта</option>
+                    <option value="Разработка уникального дизайна">Разработка уникального дизайна</option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                </div>
+              <label for="tarif"><span class="label-title">Тариф</span></label>
+                <div class="custom-select">
+                  <select id="tarif">
+                    <option value="select">выберите тариф</option>
+                    <option value="Start">Комплексное решение «START»</option>
+                    <option value="Arrow">разработка сайта NoCode - ARROW</option>
+                  </select>
+                </div>
             </div>
           </div>
           <div class="buttonsBox">

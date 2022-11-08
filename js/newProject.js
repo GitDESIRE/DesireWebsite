@@ -7,6 +7,7 @@ const customSelect = document.getElementsByClassName('custom-select');
 
 for (i = 0; i < customSelect.length; i++) {
   const selElement = customSelect[i].getElementsByTagName('select')[0];
+  console.log(selElement)
   const selectedItem = document.createElement('div');
   selectedItem.setAttribute('class', 'select-selected');
   selectedItem.innerHTML = selElement.options[selElement.selectedIndex].innerHTML;
@@ -39,6 +40,7 @@ for (i = 0; i < customSelect.length; i++) {
   selectedItem.addEventListener('click', function(e) {
     e.stopPropagation();
     closeAllSelect(this);
+    console.log(this);
     if (this.classList.contains('select-arrow-active')) {
       this.nextSibling.classList.add('select-hide');
     } else {
