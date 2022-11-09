@@ -13,27 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.remove('custom-cursor_active') // удаляем активный класс
       }
 
-      // if (target.closest('.black_wrap') || 
-      //         target.closest('.header') || 
-      //         target.closest('.footer') ||
-      //         target.closest('.banner')) {
-      //   el.classList.add('custom-cursor_light')
-      // } else {
-      //   el.classList.remove('custom-cursor_light')
-      // }
-
-      // if (target.closest('.banner')) {
-      //   el.classList.add('custom-cursor_light')
-      // } else {
-      //   el.classList.remove('custom-cursor_light')
-      // }
+      if (target.closest('.content-logo') || 
+          target.closest('.swiper-slide.swiper-slide-active') ||
+          target.closest('.dropdown_content a') ||
+          target.closest('.wrap_button button') ||
+          target.closest('.wrap_button_white button') ||
+          target.closest('.white_a')
+          ) {
+        el.classList.add('custom-cursor_dark')
+      } else {
+        el.classList.remove('custom-cursor_dark')
+      }
 
       let translate = (a, b) => `translate(${a}, ${b})`;
-      // let translateY = val => `translateY(${val})`;
       let px = 'px';
 
       el.style.transform = translate(e.pageX + px, e.pageY + px) // задаём элементу позиционирование слева
-      // el.style.transform = translateY(e.pageY + px) // задаём элементу позиционирование сверху
     });
 
     window.addEventListener('touchmove', e => { // при движении курсора

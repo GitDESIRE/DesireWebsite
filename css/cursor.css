@@ -2,7 +2,6 @@
   display: block;
   width: 12px;
   height: 12px;
-  /* mix-blend-mode: difference; */
   left: -4px;
   top: -4px;
   background-color: #9ad351;
@@ -16,12 +15,12 @@
 .custom-cursor_active {
   width: 36px;
   height: 36px;
-  opacity: 0.5;
+  opacity: 0.4;
   top: -16px;
   left: -16px;
   transition: width 0.3s, height 0.3s, backgroundColor 0.3s, opacity 0.3s top 0.3s, left 0.3s;
 }
 
-.custom-cursor_light {
-  background-color: #fff;
+.custom-cursor_dark {
+  background-color: #282828;
 }
