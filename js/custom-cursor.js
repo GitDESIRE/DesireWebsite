@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.remove('custom-cursor_active') // удаляем активный класс
       }
 
-      if (target.closest('.black_wrap') || 
-              target.closest('.header') || 
-              target.closest('.footer') ||
-              target.closest('.banner')) {
-        el.classList.add('custom-cursor_light')
-      } else {
-        el.classList.remove('custom-cursor_light')
-      }
+      // if (target.closest('.black_wrap') || 
+      //         target.closest('.header') || 
+      //         target.closest('.footer') ||
+      //         target.closest('.banner')) {
+      //   el.classList.add('custom-cursor_light')
+      // } else {
+      //   el.classList.remove('custom-cursor_light')
+      // }
 
       // if (target.closest('.banner')) {
       //   el.classList.add('custom-cursor_light')
