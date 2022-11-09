@@ -204,13 +204,20 @@ body {
   text-shadow: #9ad351 1px 1px 0, #9ad351 -1px -1px 0, #9ad351 -1px 1px 0, #9ad351 1px -1px 0;
 }
 
-.ul_white {
-  overflow: hidden;
+.white_wrap {
   position: relative;
-  padding-top: 150px;
+  padding: 270px 0 120px;
+}
+
+.ul_white {
+  user-select: none;
+  overflow: hidden;
+  top: 150px;
+  width: 100%;
+  position: absolute;
   white-space: nowrap;
   color: #ffffff;
-  background-color: #fff;
+  /* background-color: #fff; */
   text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
 }
 
@@ -374,7 +381,6 @@ body {
 }
 
 .white_wrap_wrap_slider {
-  padding-top: 72px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -461,11 +467,11 @@ body {
 .wrap_button_white {
   width: 100%;
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .wrap_button_white button {
-  margin-top: 48px;
+  margin-top: 60px;
   color: #282828;
   background-color: #ffffff;
   font-weight: 600;
@@ -534,14 +540,9 @@ body {
   margin-top: 12px;
 }
 
-.white_wrap .wrapper {
-  margin-bottom: 150px;
-  margin-top: 120px;
-}
-
 .white_wrap_pp {
   max-width: 1099px;
-  margin: 221px auto 0;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
