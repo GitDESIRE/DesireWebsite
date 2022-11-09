@@ -1,0 +1,28 @@
+.custom-cursor {
+  display: block;
+  width: 12px;
+  height: 12px;
+  /* mix-blend-mode: difference; */
+  left: -4px;
+  top: -4px;
+  background-color: #282828;
+  border-radius: 50%;
+  position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+  z-index: 999; /* чтобы элемент был над остальными элементами */
+  pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+  transition: width 0.3s, height 0.3s, backgroundColor 0.3s, opacity 0.3s, top 0.3s, left 0.3s;
+}
+
+.custom-cursor_active {
+  width: 36px;
+  height: 36px;
+  background-color: #767676;
+  opacity: 0.5;
+  top: -16px;
+  left: -16px;
+  transition: width 0.3s, height 0.3s, backgroundColor 0.3s, opacity 0.3s top 0.3s, left 0.3s;
+}
+
+.custom-cursor_light {
+  background-color: #fff;
+}
