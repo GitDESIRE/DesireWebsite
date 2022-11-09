@@ -201,4 +201,4 @@
 
 }));
 
-Marquee3k.init();
+// Marquee3k.init();
