@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/swiper-bundle.css">
     <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <link rel="stylesheet" href="../css/blockAnimation.css">
     <title>Desire</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
     </style>
 </head>
@@ -70,18 +72,18 @@
                 <div class="content">
                     <div class="content-text">
                         <h1 class="title">Cоздаём <br/> и продвигаем</h1>
-                        <p>Мы не только создаём и развиваем digital-проекты, но и наглядно показываем, как они работают.</p>
+                        <p>Мы стремимся реализовывать потенциал каждой идеи, которая есть у наших клиентов.</p>
                     </div>
                     <a href="#" class="content-logo">
-                        <img class="logo-circle" src="../assets/svg/textLogo.svg" alt="кнопка начать проект" />
+                        <img class="logo-text" src="../assets/svg/button-text.svg" alt />
                         <img class="logo-arrow" src="../assets/svg/arrowLogo.svg" alt="стрелка" />
                     </a>
                 </div>
             </div>
         </section>
         <section class="main_wrap">
-            <div class="white_wrap">
-                <div class="div_ul ul_white">
+            <div class="white_wrap block-animation">
+                <div class="div_ul ul_white marquee3k" data-speed="0.5" data-reverse="true">
                     <ul>
                         <li>кто мы</li>
                         <li>кто мы</li>
@@ -103,7 +105,7 @@
                     </div>
                     <div class="white_wrap_p">
                         <div>
-                            <h1>Делаем незаурядные digital проекты, которые привлекают внимание и клиентов</h1>
+                            <h1>Мы ориентируемся на ваши цели, помогая выйти на новый уровень: не просто «быть», а «менять мир»</h1>
                         </div>
                         <div class="text-box" style="display: flex;">
                             <div>
@@ -119,8 +121,8 @@
                     </div>
                 </div>
             </div>
-            <div class="black_wrap">
-                <div class="div_ul ul_black">
+            <div class="black_wrap block-animation">
+                <div class="div_ul ul_black marquee3k" data-speed="0.5" data-reverse="true">
                     <ul>
                         <li>Что мы делаем</li>
                         <li>Что мы делаем</li>
@@ -185,8 +187,8 @@
                     </div>
                 </div>
             </div>
-            <div class="white_wrap">
-                <div class="div_ul ul_white">
+            <div class="white_wrap block-animation">
+                <div class="div_ul ul_white marquee3k" data-speed="0.5" data-reverse="true">
                     <ul>
                         <li>портфолио</li>
                         <li>портфолио</li>
@@ -242,11 +244,11 @@
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="wrap_button_white">
-                    <button>Смотреть всё</button>
+                    <a href="#"><button>Смотреть всё</button></a>
                 </div>
             </div>
-            <div class="black_wrap">
-                <div class="div_ul ul_black">
+            <div class="black_wrap block-animation">
+                <div class="div_ul ul_black marquee3k" data-speed="0.5" data-reverse="true">
                     <ul>
                         <li>Как мы работаем</li>
                         <li>Как мы работаем</li>
@@ -261,7 +263,7 @@
                         <li>Как мы работаем</li>
                     </ul>
                 </div>
-                <div class="wrapper" style="flex-direction: column;">
+                <div class="wrapper" style="flex-direction: column; align-items: normal;">
                     <div class="timeline">
                         <ol class="timeline__inner">
                             <li class="timeline__item">
@@ -299,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="white_wrap">
+            <div class="white_wrap block-animation">
                 <div class="white_wrap_pp">
                     <p>Мы предоставляем <span>весь спектр услуг</span> для вашего digital-проекта: <span>от</span>
                         разработки сайта <span>и</span> мобильных приложений <span>до</span> продвижения проекта в
@@ -307,7 +309,7 @@
                     </p>
                 </div>
                 <div class="wrap_button_white wrap_button_green" style="margin-bottom: 0;">
-                    <button style="margin-top: 0">Начать проект</button>
+                    <a href="#"><button style="margin-top: 0">Начать проект</button></a>
                 </div>
             </div>
         </section>
@@ -340,7 +342,8 @@
                             <a href="mailto:desirecompany@yandex.ru" class="mail-link">desirecompany@yandex.ru</a>
                         </li>
                         <li class="footer-item">telegram-менеджер:</li>
-                        <li class="footer-item">@desire_manager</li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">@desire_manager</a></li>
                     </ul>
                     <ul class="footer-list">
                         <li class="footer-item-title">Соцсети
@@ -383,9 +386,13 @@
             </div>
         </div>
     </footer>
+    <div class="custom-cursor"></div>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/burgerMenu.js"></script>
+    <script src="../js/marquee3k.js"></script>
+    <script src="../js/custom-cursor.js"></script>
+    <script src="../js/blockAnimation.js"></script>
 </body>
 </html>
