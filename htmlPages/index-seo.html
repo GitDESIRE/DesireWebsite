@@ -7,6 +7,7 @@
     <title>Desire</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../css/cursor.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
@@ -27,7 +28,7 @@
                         <span class="nav-list_link">Услуги</span>
                         <div class="dropdown_content">
                           <a href="#">Веб-дизайн и разработка</a>
-                          <a href="#">SEO</a>
+                          <a href="#">Продвижение</a>
                           <a href="#">Комплексные тарифы</a>
                         </div>
                     </li>
@@ -49,7 +50,7 @@
                     <div class="burger-menu_link openLink">Услуги
                         <div class="hidden-links">
                             <a href="#" class="burger-menu_hidden-link">Web-дизайн и разработка</a>
-                            <a href="#" class="burger-menu_hidden-link">SEO</a>
+                            <a href="#" class="burger-menu_hidden-link">Продвижение</a>
                             <a href="#" class="burger-menu_hidden-link">Комплексные тарифы</a>
                         </div>
                     </div>
@@ -65,7 +66,6 @@
                 <div class="content">
                     <div class="seo-banner-top">
                         <h1 class="title">SEO</h1>
-                        <p class="seo-banner-section"><a href="#">Услуги </a> &nbsp / &nbsp SEO</p>
                     </div>
                     <div class="seo-banner-bottom">
                         <p class="seo-banner-description">Оптимизируем и продвигаем сайты в ТОП, чтобы ваша целевая аудитория всегда могла вас найти.</p>
@@ -86,24 +86,29 @@
                 <li class="tab">
                     <label class="tab-wrapper">
                         <input type="checkbox" class="toggler" />
-                        <h3 class="tab-title">
-                            <span class="tab-number">
-                                /01
+                        <div class="tab-leftPart">
+                            <h3 class="tab-title">
+                                <span class="tab-number">
+                                    /01
+                                </span>
+                                Basic
+                            </h3>
+                            <a href="#" class="btn">Заказать</a>
+                        </div>
+                        <div class="tab-rightPart">
+                            <p class="text">
+                                Только запустили свой сайт и не знаете, что с ним делать дальше? Или вы на рынке уже несколько лет, и вдруг ваш сайт проседает в посещаемости?<br/><br/>
+                                В рамках <span class="text-color">Basic</span> оптимизации мы работаем на стабилизацию вашего сайта по критериям поисковых систем и трафика на нем
+                            </p>
+                            <span class="toggle">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 7.29199V27.7087" stroke="#282828" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.29199 17.5H27.7087" stroke="#282828" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
                             </span>
-                            Basic
-                        </h3>
-                        <span class="toggle">
-                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5 7.29199V27.7087" stroke="#282828" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M7.29199 17.5H27.7087" stroke="#282828" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </span>
-                        <a href="#" class="btn">Заказать</a>
-                        <p class="text">
-                        Только запустили свой сайт и не знаете, что с ним делать дальше? Или вы на рынке уже несколько лет, и вдруг ваш сайт проседает в посещаемости?<br/><br/>
-                        В рамках <span class="text-color">Basic</span> оптимизации мы работаем на стабилизацию вашего сайта по критериям поисковых систем и трафика на нем</p>
+                        </div> 
                     </label>
                     <div class="hidden-content" style="display: none;">
                         <div class="hidden-wrapper">
@@ -167,10 +172,12 @@
                             </label>
                         </div>
                         <div class="hidden-wrapper">
-                            <h4 class="subtitle">
-                                Стоимость
-                            </h4>
-                            <p class="price">от 10 000 руб.</p>
+                            <div class="tab-wrapper">
+                                <h4 class="subtitle">
+                                    Стоимость
+                                </h4>
+                                <p class="price">от 10 000 руб.</p>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -546,6 +553,8 @@
             </div>
         </div>
     </footer>
+    <div class="custom-cursor"></div>
+    <script src="../js/custom-cursor.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>

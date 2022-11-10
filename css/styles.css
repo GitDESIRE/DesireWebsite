@@ -4,17 +4,20 @@ ul {
   padding: 0;
 }
 
+label,
+button {
+  cursor: none;
+}
+
 a {
   text-decoration: none;
   color: #757575;
+  cursor: none !important;
 }
 
 button a {
   color: #282828;
-}
-
-button {
-  cursor: pointer;
+  cursor: none !important;
 }
 
 body {
@@ -656,17 +659,20 @@ nav {
   position: relative;
 }
 
-.nav-list_item span {
-  cursor: pointer;
-}
-
 .dropdown_content {
   height: 0;
   opacity: 0;
-  transform: translateY(-100%);
+  padding-top: 0;
   position: absolute;
   min-width: 260px;
   z-index: 9;
+  transition: all 0.3s linear;
+}
+
+.dropdown:hover .dropdown_content {
+  height: 100%;
+  opacity: 1;
+  padding-top: 15px;
   transition: all 0.3s linear;
 }
 
@@ -682,14 +688,6 @@ nav {
 
 .dropdown:hover .dropdown_content a {
   display: block;
-}
-
-.dropdown:hover .dropdown_content {
-  height: 100%;
-  padding-top: 15px;
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.3s linear;
 }
 
 .dropdown_content a:hover {
@@ -1058,7 +1056,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .checkbox-label #arrow-icon,
@@ -1326,8 +1323,15 @@ nav {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #282828 !important;
+  color: #282828;
   background: #9ad351;
+  border: 1px solid #9ad351;
+  transition: all 0.3s linear;
+}
+
+.btn-project:hover {
+  background-color: #fff;
+  transition: all 0.3s linear;
 }
 
 /* SEO */
@@ -1411,29 +1415,23 @@ nav {
 .tabs .hidden-wrapper {
   width: 100%;
   max-width: 1199px;
-  padding: 41px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
-  cursor: pointer;
   position: relative;
   border-bottom: 1px solid #767676;
 }
 
 .hidden-content .hidden-wrapper .tab-wrapper {
   min-height: unset;
-  align-items: center;
-  justify-content: flex-end;
   border: none;
+  margin: 0;
+  width: 52%;
 }
 
 .hidden-content .hidden-wrapper .tab-wrapper h4 {
-  margin-right: 400px;
   margin-bottom: 0;
-}
-
-.hidden-content .hidden-wrapper.toggled .tab-wrapper.opened h4 {
-  margin-right: 30px;
 }
 
 .hidden-content .hidden-wrapper.toggled .tab-wrapper.opened {
@@ -1446,13 +1444,30 @@ nav {
   max-width: 1199px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
-  cursor: pointer;
   position: relative;
   border-bottom: 1px solid #767676;
 }
 
+.tab-rightPart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tab .tab-wrapper.opened .tab-leftPart {
+  width: 47%;
+  padding: 12px 0;
+}
+
+.tab .tab-wrapper.opened .tab-rightPart {
+  width: 52%;
+  justify-content: space-between;
+}
+
 .tabs .tab {
+  padding: 0 12px;
   width: 100%;
   min-height: 115px;
   transition: background-color 0.13s ease, min-height 0.13s ease;
@@ -1462,12 +1477,11 @@ nav {
   background-color: #282828;
 }
 
-.tabs .tab:hover h3 {
+.tabs .tab .opened h3,
+.tabs .tab:hover h3,
+.tabs .tab .opened svg path,
+.tabs .tab:hover svg path {
   color: #fff;
-}
-
-.tabs .tab:hover .toggle path {
-  stroke: #fff;
 }
 
 .tabs .tab h3 {
@@ -1483,9 +1497,8 @@ nav {
   color: #9ad351;
 }
 
-.tabs .tab .toggle {
-  margin-left: auto;
-  transition: transform 0.13s ease;
+.tabs .tab .toggle svg {
+  transition: transform 0.3s ease;
 }
 
 .hidden-content .hidden-wrapper .tab-wrapper .toggle {
@@ -1496,82 +1509,82 @@ nav {
   display: none;
 }
 
-.tabs .tab input:checked + h3 {
-  color: #fff;
-  margin-bottom: 80px;
-}
-
-.tabs .tab input:checked + h3 + .toggle svg path,
+.tabs .tab .opened .toggle svg path,
+.tabs .tab:hover .toggle svg path,
 .tabs .tab .hidden-content input:checked + h4 + .toggle svg path {
   stroke: #fff;
 }
 
-.tabs .tab input:checked + h3 + .toggle,
+.tabs .tab .opened .toggle svg,
 .tabs .tab .hidden-content input:checked + h4 + .hidden-content + .toggle {
   transform: rotate(135deg);
+  transition: transform 0.3s ease;
 }
 
-.tabs .tab input:checked + h3 + .toggle + .btn {
-  display: inline-block;
+.tabs .tab .toggle svg:hover path {
+  stroke: #9ad351;
 }
 
-.tabs .tab input:checked + h3 + .toggle + .btn + .text {
+.tabs .tab .opened .text,
+.tabs .tab .opened .btn {
   display: inline-block;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.tabs .tab .opened .text {
+  opacity: 0.8;
 }
 
 .hidden-content .hidden-wrapper .tab-wrapper.opened {
   align-items: flex-start;
 }
 
-.opened {
-  min-height: 152px !important;
-}
-
 .toggled {
   background-color: #282828;
-  min-height: 152px !important;
-}
-
-.hidden {
-  display: none;
+  transition: all 0.3s linear;
 }
 
 .hidden-content {
-  display: flex;
   flex-direction: column;
 }
 
 .tabs .tab .btn {
-  position: absolute;
   display: none;
-  left: 0;
-  bottom: 14px;
   padding: 15px 40px;
   background: #9ad351;
+  border: 1px solid #9ad351;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #282828;
+  transition: all 0.3s linear;
+}
+
+.tabs .tab .btn:hover {
+  background-color: #282828;
+  color: #fff;
+  transition: all 0.3s linear;
 }
 
 .tabs .tab .btn:active {
-  transition: 0.13s;
-  transform: translateY(5px);
+  transition: 0.1s;
+  transform: translateY(2px);
 }
 
 .tabs .tab .text {
+  display: none;
   right: 55px;
   bottom: 17px;
   max-width: 533px;
-  display: none;
-  position: absolute;
+  height: 0;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   /* White */
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0;
 }
 
 .tabs .tab .hidden-content {
@@ -1580,7 +1593,6 @@ nav {
 
 .tabs .tab h4 {
   margin-top: 0;
-  margin-right: 95px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1590,12 +1602,11 @@ nav {
 
 .tabs .tab .task-list {
   max-width: 275px;
-  margin-right: 93px;
 }
 
 .tabs .tab .task-list li {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: block;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -1608,8 +1619,7 @@ nav {
 }
 
 .price {
-  margin-right: 296px;
-  margin-top: 0;
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1954,24 +1964,33 @@ nav {
 
 .about-btn,
 .order-btn {
+  width: 221.5px;
   color: #282828;
   padding: 15px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  border: 1px solid #9ad351;
+  transition: all 0.3s linear;
 }
 
 .about-btn {
   background-color: #fff;
-  border: 1px solid #9ad351;
-  width: 234px;
+}
+
+.about-btn:hover {
+  background-color: #9ad351;
+  transition: all 0.3s linear;
 }
 
 .order-btn {
-  width: 209px;
   background-color: #9ad351;
-  border: none;
+}
+
+.order-btn:hover {
+  background-color: #fff;
+  transition: all 0.3s linear;
 }
 
 .cases {
@@ -2091,6 +2110,13 @@ nav {
   line-height: 20px;
   text-align: center;
   color: #282828;
+  transition: all 0.3s linear;
+}
+
+.cases-btn:hover {
+  border-color: #9ad351;
+  background-color: #9ad351;
+  transition: all 0.3s linear;
 }
 
 /* TariffsPage */
@@ -2413,11 +2439,6 @@ nav {
   color: #ffffff;
 }
 
-.text {
-  display: flex;
-  gap: 275px;
-}
-
 .text-list {
   display: flex;
   flex-direction: column;
@@ -2608,6 +2629,37 @@ nav {
 
   .swiper {
     max-height: 584px;
+  }
+
+  .hidden-content .hidden-wrapper.toggled .tab-wrapper {
+    flex-direction: column;
+  }
+
+  .hidden-content .hidden-wrapper .tab-wrapper .toggle {
+    position: absolute;
+    right: 0;
+    top: -15px;
+  }
+
+  .hidden-content .hidden-wrapper.toggled .tab-wrapper h4 {
+    margin-bottom: 20px;
+  }
+
+  .tab.toggled .tab-wrapper.opened {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .hidden-content .hidden-wrapper.toggled .tab-wrapper.opened {
+    padding-top: 0;
+  }
+
+  .tabs .tab .task-list {
+    padding-inline-start: 15px;
+  }
+
+  .tab-rightPart {
+    align-items: flex-start;
   }
 
   .p_1 {
@@ -2831,6 +2883,14 @@ nav {
 
   .about-project {
     padding: 100px 0;
+  }
+
+  .tab.toggled .tab-wrapper.opened {
+    padding-top: 25px;
+  }
+
+  .tabs .hidden-wrapper {
+    padding: 30px 0;
   }
 
   .projects {
@@ -3136,8 +3196,39 @@ nav {
     line-height: 47px;
   }
 
-  .hidden-content .hidden-wrapper .tab-wrapper h4 {
-    margin-right: 95px;
+  .tabs .tab .task-list {
+    max-width: 100%;
+    padding-inline-start: 15px;
+  }
+
+  .tabs .tab-wrapper.opened {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab .tab-wrapper.opened .tab-rightPart,
+  .tab .tab-wrapper.opened .tab-leftPart {
+    width: unset;
+  }
+
+  .tab .tab-wrapper.opened .tab-rightPart .toggle {
+    position: absolute;
+    right: 0;
+    top: 38px;
+  }
+
+  .tabs .hidden-wrapper {
+    justify-content: flex-start;
+  }
+
+  .hidden-content .hidden-wrapper .tab-wrapper {
+    width: 100%;
+  }
+
+  .hidden-content .hidden-wrapper .tab-wrapper .toggle {
+    position: absolute;
+    right: 0;
+    top: -5px;
   }
 
   .main .main_container {
@@ -3200,6 +3291,25 @@ nav {
   }
   .desicionBox {
     padding: 0;
+  }
+
+  .tab.toggled .tab-wrapper.opened {
+    padding-top: 22px;
+  }
+
+  .tabs .tab h3 {
+    max-width: 201px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 19px;
+  }
+
+  .tabs .tab h3 span {
+    display: block;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .banner-description-item {
