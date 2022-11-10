@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const togglers = document.querySelectorAll('.toggler')
 
     togglers.forEach((toggler) => {
-        toggler.addEventListener('input', (e) => {
+        toggler.addEventListener('click', (e) => {
             e.target.parentNode.classList.toggle('opened')
             e.target.parentNode.parentNode.classList.toggle('toggled')
             if (e.target.parentNode.parentNode.querySelector('.hidden-content').style.display == 'none') {
