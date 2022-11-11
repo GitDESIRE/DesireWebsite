@@ -8,14 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = e.target // определяем, где находится курсор
       if (!target) return
 
-      if (target.closest('a') ||
+      if (
+          // target.closest('a') ||
           target.closest('.tab-wrapper') ||
           target.closest('.swiper-button-next') ||
           target.closest('.swiper-button-prev') ||
-          target.closest('button') ||
+          // target.closest('button') ||
           target.closest('.checkbox') ||
-          target.closest('input')) { // если курсор наведён на ссылку
+          target.closest('input')) { // если курсор наведён на элементс таким классом или тегом
         el.classList.add('custom-cursor_active') // элементу добавляем активный класс
+      } else if (target.closest('a')) { // проверяем кнопку на аттирибут disabled
+        const btn = target.closest('a').getElementsByTagName('button')[0];
+        if (btn && btn.hasAttribute('disabled')) {
+          el.classList.remove('custom-cursor_active')
+        } else {
+          el.classList.add('custom-cursor_active')
+        }
       } else { // иначе
         el.classList.remove('custom-cursor_active') // удаляем активный класс
       }
@@ -39,39 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       el.style.transform = translate(e.pageX + px, e.pageY + px) // задаём элементу позиционирование слева
     });
-
-    // window.addEventListener('touchmove', e => { // при движении курсора
-    //   const target = e.target // определяем, где находится курсор
-    //   if (!target) return
-
-    //   if (target.closest('a')) { // если курсор наведён на ссылку
-    //     el.classList.add('custom-cursor_active') // элементу добавляем активный класс
-    //   } else { // иначе
-    //     el.classList.remove('custom-cursor_active') // удаляем активный класс
-    //   }
-
-    //   // if (target.closest('.black_wrap') || 
-    //   //         target.closest('.header') || 
-    //   //         target.closest('.footer') ||
-    //   //         target.closest('.banner')) {
-    //   //   el.classList.add('custom-cursor_light')
-    //   // } else {
-    //   //   el.classList.remove('custom-cursor_light')
-    //   // }
-
-    //   // if (target.closest('.banner')) {
-    //   //   el.classList.add('custom-cursor_light')
-    //   // } else {
-    //   //   el.classList.remove('custom-cursor_light')
-    //   // }
-
-    //   let translate = (a, b) => `translate(${a}, ${b})`;
-    //   // let translateY = val => `translateY(${val})`;
-    //   let px = 'px';
-
-    //   el.style.transform = translate(e.pageX + px, e.pageY + px) // задаём элементу позиционирование слева
-    //   // el.style.transform = translateY(e.pageY + px) // задаём элементу позиционирование сверху
-    // })
   }
 
   followCursor() // вызываем функцию followCursor
