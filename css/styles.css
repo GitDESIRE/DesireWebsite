@@ -3211,6 +3211,10 @@ nav {
     width: unset;
   }
 
+  .tab .tab-wrapper.opened .tab-leftPart {
+    padding: 0;
+  }
+
   .tab .tab-wrapper.opened .tab-rightPart .toggle {
     position: absolute;
     right: 0;
