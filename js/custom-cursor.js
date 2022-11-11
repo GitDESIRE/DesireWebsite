@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
           target.closest('.swiper-button-next') ||
           target.closest('.swiper-button-prev') ||
           target.closest('button') ||
-          target.closest('.checkbox')) { // если курсор наведён на ссылку
+          target.closest('.checkbox') ||
+          target.closest('input')) { // если курсор наведён на ссылку
         el.classList.add('custom-cursor_active') // элементу добавляем активный класс
       } else { // иначе
         el.classList.remove('custom-cursor_active') // удаляем активный класс
